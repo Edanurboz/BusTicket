@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.DTO;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
@@ -19,28 +20,25 @@ namespace Business.Concrete
             _tripRepository = tripRepository;
         }
 
-        public void Create(Trip trip)
+        public string Create(CreateTripDTO trip)
         {
-            if (trip != null)
-            {
-                _tripRepository.Create(trip);
-            }
-            else
-            {
-                throw new ArgumentNullException(nameof(trip), "Trip cannot be null");
-            }
+           var newTrip= new Trip();
+            newTrip.arrival_city = trip.arrival_city;
+            newTrip.price = trip.price;
+            newTrip.departure_time = trip.departure_time;
+            newTrip.departure_city = trip.departure_city;
+            newTrip.bus_id = trip.bus_id;
+            newTrip.date_= trip.date_;
+            _tripRepository.Create(newTrip);
+
+            return "Seyehat ekleme başarılı";
         }
 
-        public void DeleteTrip(Trip trip)
+        public void DeleteTrip(DeleteTripDTO trip)
         {
-            if (trip != null)
-            {
-                _tripRepository.Delete(trip);
-            }
-            else
-            {
-                throw new ArgumentNullException(nameof(trip), "Trip cannot be null");
-            }
+
+            var newTrip = new Trip();
+            newTrip.trip_id = trip.trip_id;
         }
 
         public List<Trip> GetAllTrips()
@@ -70,16 +68,17 @@ namespace Business.Concrete
             }
         }
 
-        public void UpdateTrip(Trip trip)
+        public void UpdateTrip(UpdateTripDTO trip)
         {
-            if (trip != null)
-            {
-                _tripRepository.Update(trip);
-            }
-            else
-            {
-                throw new ArgumentNullException(nameof(trip), "Trip cannot be null");
-            }
+
+            var newTrip = new Trip();
+            newTrip.arrival_city = trip.arrival_city;
+            newTrip.price = trip.price;
+            newTrip.departure_time = trip.departure_time;
+            newTrip.departure_city = trip.departure_city;
+            newTrip.bus_id = trip.bus_id;
+            newTrip.date_ = trip.date_;
+            _tripRepository.Update(newTrip);
         }
     }
 }

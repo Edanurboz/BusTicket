@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.DTO;
 using Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -34,35 +35,24 @@ namespace WebAPII.Controllers
             return Ok(trip);
         }
 
-        [HttpPost]
-        public IActionResult CreateTrip([FromBody] Trip trip)
+        [HttpPost("CreateTrip")]
+        public IActionResult CreateTrip([FromBody] CreateTripDTO request)
         {
-            _tripService.Create(trip);
-            return CreatedAtAction(nameof(GetTripById), new { id = trip.trip_id }, trip);
+            _tripService.Create(request);
+            return Ok();
         }
 
-        [HttpPut("{id}")]
-        public IActionResult UpdateTrip(int id, [FromBody] Trip trip)
+        [HttpPut("UpdateTrip")]
+        public IActionResult UpdateTrip([FromBody] UpdateTripDTO request)
         {
-            if (id != trip.trip_id)
-            {
-                return BadRequest();
-            }
-
-            _tripService.UpdateTrip(trip);
-            return NoContent();
+            _tripService.UpdateTrip(request);
+            return Ok();
         }
 
-        [HttpDelete("{id}")]
-        public IActionResult DeleteTrip(int id)
+        [HttpDelete("DeleteTrip")]
+        public IActionResult DeleteTrip([FromBody] DeleteTripDTO request)
         {
-            var trip = _tripService.GetTripById(id);
-            if (trip == null)
-            {
-                return NotFound();
-            }
-
-            _tripService.DeleteTrip(trip);
+            _tripService.DeleteTrip(request);
             return NoContent();
         }
     }

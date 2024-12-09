@@ -43,6 +43,9 @@ builder.Services.AddScoped<ITicketRepository, TicketRepository>();
 builder.Services.AddScoped<ITripService, TripManager>();
 builder.Services.AddScoped<ITripRepository, TripRepository>();
 
+builder.Services.AddScoped<IBusService, BusManager>();
+builder.Services.AddScoped<IBusRepository, BusRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -53,7 +56,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.UseAuthentication();
+
+app.UseCors("AllowAllOrigins");
 
 app.UseAuthorization();
 

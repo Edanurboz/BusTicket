@@ -103,6 +103,11 @@ namespace DataAccess.Concrete
                       .WithOne(s => s.Trip)
                       .HasForeignKey(s => s.trip_id)
                       .OnDelete(DeleteBehavior.Cascade);
+
+                entity.HasOne(tr => tr.Bus)
+                      .WithMany(b => b.Trips)
+                      .HasForeignKey(tr => tr.bus_id)
+                      .OnDelete(DeleteBehavior.SetNull); // Bus silinirse, bus_id null olur
             });
 
             // Seat Entity
@@ -121,12 +126,26 @@ namespace DataAccess.Concrete
                       .HasForeignKey(s => s.trip_id)
                       .OnDelete(DeleteBehavior.Cascade);
             });
+
+            // Bus Entity
+            modelBuilder.Entity<Bus>(entity =>
+            {
+                entity.HasKey(b => b.bus_id);
+
+                entity.Property(b => b.plate_number)
+                      .IsRequired()
+                      .HasMaxLength(50);
+
+                entity.Property(b => b.company)
+                      .HasMaxLength(50);
+            });
         }
 
         public DbSet<Seat> Seats { get; set; }
         public DbSet<Ticket> Tickets { get; set; }
         public DbSet<Trip> Trips { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Bus> Buses { get; set; }
     }
 }
 

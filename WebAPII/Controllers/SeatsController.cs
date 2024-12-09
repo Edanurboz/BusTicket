@@ -9,7 +9,7 @@ namespace WebAPII.Controllers
     [ApiController]
     public class SeatsController : ControllerBase
     {
-        private ISeatService _seatService;
+        ISeatService _seatService;
 
         public SeatsController(ISeatService seatService)
         {

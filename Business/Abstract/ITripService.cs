@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Business.DTO;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,9 @@ namespace Business.Abstract
 {
     public interface ITripService
     {
-        void Create(Trip trip);
-        void UpdateTrip(Trip trip);
-        void DeleteTrip(Trip trip);
+        string Create(CreateTripDTO trip);
+        void UpdateTrip(UpdateTripDTO trip);
+        void DeleteTrip(DeleteTripDTO trip);
         Trip GetTripById(int id);
         List<Trip> GetAllTrips();
         List<Trip> GetTrips(string departureCity, string arrivalCity);

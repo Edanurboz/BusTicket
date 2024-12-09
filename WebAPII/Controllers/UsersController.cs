@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.DTO;
 using Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -34,36 +35,25 @@ namespace WebAPII.Controllers
             return Ok(user);
         }
 
-        [HttpPost]
-        public IActionResult CreateUser([FromBody] User user)
+        [HttpPost("CreateUser")]
+        public IActionResult CreateUser([FromBody] CreateUserDTO request)
         {
-            string sonuc= _userService.CreateUser(user);
+            string sonuc= _userService.CreateUser(request);
             return Ok(sonuc);
         }
 
-        [HttpPut("{id}")]
-        public IActionResult UpdateUser(int id, [FromBody] User user)
+        [HttpPut("UpdateUser")]
+        public IActionResult UpdateUser([FromBody] UpdateUserDTO request)
         {
-            if (id != user.user_id)
-            {
-                return BadRequest();
-            }
-
-            _userService.UpdateUser(user);
-            return NoContent();
+            _userService.UpdateUser(request);
+            return Ok();
         }
 
-        [HttpDelete("{id}")]
-        public IActionResult DeleteUser(int id)
+        [HttpDelete("DeleteUser")]
+        public IActionResult DeleteUser([FromBody] DeleteUserDTO request)
         {
-            var user = _userService.GetUserById(id);
-            if (user == null)
-            {
-                return NotFound();
-            }
-
-            _userService.DeleteUser(id);
-            return NoContent();
+            _userService.DeleteUser(request);
+            return Ok();
         }
 
         [HttpGet("byemail")]

@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.DTO;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
@@ -20,30 +21,25 @@ namespace Business.Concrete
         }
 
 
-        public string CreateUser(User user)
+        public string CreateUser(CreateUserDTO user)
         {
             // Kullanıcı oluşturma işlemleri
             // Örneğin, validasyon yapabilirsiniz
-            if (user == null)
-            {
-                throw new ArgumentNullException(nameof(user), "Kullanıcı nesnesi null olamaz.");
-            }
+           var newUser=new User();
+            newUser.name = user.name;
+            newUser.email = user.email;
+            newUser.password = user.password;
+            newUser.surname = user.surname;
+            newUser.phone_number = user.phone_number;
+            _userRepository.Create(newUser);
 
-            _userRepository.Create(user);
             return "Kişi başarıyla eklendi.";
         }
 
-        public void DeleteUser(int userId)
+        public void DeleteUser(DeleteUserDTO user)
         {
-            var user = _userRepository.Get(u => u.user_id == userId);
-            if (user != null)
-            {
-                _userRepository.Delete(user);
-            }
-            else
-            {
-                throw new KeyNotFoundException("Kullanıcı bulunamadı.");
-            }
+            var newUser = new User();
+            newUser.user_id = user.user_id;
         }
 
         public List<User> GetAllUsers()
@@ -72,15 +68,16 @@ namespace Business.Concrete
             return user;
         }
 
-        public void UpdateUser(User user)
+        public void UpdateUser(UpdateUserDTO user)
         {
-            // Kullanıcı güncelleme işlemleri
-            if (user == null)
-            {
-                throw new ArgumentNullException(nameof(user), "Kullanıcı nesnesi null olamaz.");
-            }
-
-            _userRepository.Update(user);
+           
+            var newUser = new User();
+            newUser.name = user.name;
+            newUser.email = user.email;
+            newUser.password = user.password;
+            newUser.surname = user.surname;
+            newUser.phone_number = user.phone_number;
+            _userRepository.Update(newUser);
         }
     }
 }

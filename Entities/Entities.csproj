@@ -172,6 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IEntity.cs" />
+    <Compile Include="Concrete\Bus.cs" />
     <Compile Include="Concrete\Seat.cs" />
     <Compile Include="Concrete\Ticket.cs" />
     <Compile Include="Concrete\Trip.cs" />

@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Business.DTO;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,9 @@ namespace Business.Abstract
 {
     public interface IUserService
     {
-        string CreateUser(User user);
-        void UpdateUser(User user);
-        void DeleteUser(int userId);
+        string CreateUser(CreateUserDTO user);
+        void UpdateUser(UpdateUserDTO user);
+        void DeleteUser(DeleteUserDTO user);
         User GetUserByEmail(string email);
         List<User> GetAllUsers();
         object GetUserById(int id);

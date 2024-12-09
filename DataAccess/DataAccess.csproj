@@ -261,12 +261,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\EfEntityRepositoryBase.cs" />
+    <Compile Include="Abstract\IBusRepository.cs" />
     <Compile Include="Abstract\IEntityRepository.cs" />
     <Compile Include="Abstract\ISeatRepository.cs" />
     <Compile Include="Abstract\ITicketRepository.cs" />
     <Compile Include="Abstract\ITripRepository.cs" />
     <Compile Include="Abstract\IUserRepository.cs" />
     <Compile Include="Concrete\BiletOtomasyonu.cs" />
+    <Compile Include="Concrete\BusRepository.cs" />
     <Compile Include="Concrete\SeatRepository.cs" />
     <Compile Include="Concrete\TicketRepository.cs" />
     <Compile Include="Concrete\TripRepository.cs" />

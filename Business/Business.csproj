@@ -167,14 +167,25 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IBusService.cs" />
     <Compile Include="Abstract\ISeatService.cs" />
     <Compile Include="Abstract\ITicketService.cs" />
     <Compile Include="Abstract\ITripService.cs" />
     <Compile Include="Abstract\IUserService.cs" />
+    <Compile Include="Concrete\BusManager.cs" />
     <Compile Include="Concrete\SeatManager.cs" />
     <Compile Include="Concrete\TicketManager.cs" />
     <Compile Include="Concrete\TripManager.cs" />
     <Compile Include="Concrete\UserManager.cs" />
+    <Compile Include="DTO\CreateBusDTO.cs" />
+    <Compile Include="DTO\CreateTripDTO.cs" />
+    <Compile Include="DTO\CreateUserDTO.cs" />
+    <Compile Include="DTO\DeleteBusDTO.cs" />
+    <Compile Include="DTO\DeleteTripDTO.cs" />
+    <Compile Include="DTO\DeleteUserDTO.cs" />
+    <Compile Include="DTO\UpdateBusDTO.cs" />
+    <Compile Include="DTO\UpdateTripDTO.cs" />
+    <Compile Include="DTO\UpdateUserDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -191,6 +202,7 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.4.0.1\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.4.0.1\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

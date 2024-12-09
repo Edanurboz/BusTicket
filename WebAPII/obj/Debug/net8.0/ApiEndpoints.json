@@ -1,5 +1,63 @@
 [
   {
+    "ContainingType": "WebAPII.Controllers.BusesController",
+    "Method": "GetAllBuses",
+    "RelativePath": "api/Buses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPII.Controllers.BusesController",
+    "Method": "CreateBus",
+    "RelativePath": "api/Buses/CreateBus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Business.DTO.CreateBusDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPII.Controllers.BusesController",
+    "Method": "DeleteBus",
+    "RelativePath": "api/Buses/DeleteBus",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Business.DTO.DeleteBusDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPII.Controllers.BusesController",
+    "Method": "UpdateBus",
+    "RelativePath": "api/Buses/UpdateBus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Business.DTO.UpdateBusDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebAPII.Controllers.SeatsController",
     "Method": "CreateSeat",
     "RelativePath": "api/Seats/CreateSeat",
@@ -207,22 +265,6 @@
   },
   {
     "ContainingType": "WebAPII.Controllers.TripsController",
-    "Method": "CreateTrip",
-    "RelativePath": "api/Trips",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "trip",
-        "Type": "Entities.Concrete.Trip",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebAPII.Controllers.TripsController",
     "Method": "GetTripById",
     "RelativePath": "api/Trips/{id}",
     "HttpMethod": "GET",
@@ -239,20 +281,15 @@
   },
   {
     "ContainingType": "WebAPII.Controllers.TripsController",
-    "Method": "UpdateTrip",
-    "RelativePath": "api/Trips/{id}",
-    "HttpMethod": "PUT",
+    "Method": "CreateTrip",
+    "RelativePath": "api/Trips/CreateTrip",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "trip",
-        "Type": "Entities.Concrete.Trip",
+        "Name": "request",
+        "Type": "Business.DTO.CreateTripDTO",
         "IsRequired": true
       }
     ],
@@ -261,14 +298,30 @@
   {
     "ContainingType": "WebAPII.Controllers.TripsController",
     "Method": "DeleteTrip",
-    "RelativePath": "api/Trips/{id}",
+    "RelativePath": "api/Trips/DeleteTrip",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
+        "Name": "request",
+        "Type": "Business.DTO.DeleteTripDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPII.Controllers.TripsController",
+    "Method": "UpdateTrip",
+    "RelativePath": "api/Trips/UpdateTrip",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Business.DTO.UpdateTripDTO",
         "IsRequired": true
       }
     ],
@@ -286,62 +339,9 @@
   },
   {
     "ContainingType": "WebAPII.Controllers.UsersController",
-    "Method": "CreateUser",
-    "RelativePath": "api/Users",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user",
-        "Type": "Entities.Concrete.User",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebAPII.Controllers.UsersController",
     "Method": "GetUserById",
     "RelativePath": "api/Users/{id}",
     "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebAPII.Controllers.UsersController",
-    "Method": "UpdateUser",
-    "RelativePath": "api/Users/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "user",
-        "Type": "Entities.Concrete.User",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebAPII.Controllers.UsersController",
-    "Method": "DeleteUser",
-    "RelativePath": "api/Users/{id}",
-    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -365,6 +365,54 @@
         "Name": "email",
         "Type": "System.String",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPII.Controllers.UsersController",
+    "Method": "CreateUser",
+    "RelativePath": "api/Users/CreateUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Business.DTO.CreateUserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPII.Controllers.UsersController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/Users/DeleteUser",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Business.DTO.DeleteUserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPII.Controllers.UsersController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/Users/UpdateUser",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Business.DTO.UpdateUserDTO",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
