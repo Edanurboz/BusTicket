@@ -107,3 +107,7 @@ C:\Users\edanu\source\repos\BusTicket\Business\obj\Debug\Business.csproj.CoreCom
 C:\Users\edanu\source\repos\BusTicket\Business\obj\Debug\Business.csproj.Up2Date
 C:\Users\edanu\source\repos\BusTicket\Business\obj\Debug\Business.dll
 C:\Users\edanu\source\repos\BusTicket\Business\obj\Debug\Business.pdb
+C:\Users\edanu\source\repos\BusTicket\Business\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\edanu\source\repos\BusTicket\Business\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\edanu\source\repos\BusTicket\Business\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\edanu\source\repos\BusTicket\Business\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml

@@ -3,71 +3,79 @@
   "WorkspaceRootPath": "C:\\Users\\edanu\\source\\repos\\BusTicket\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8964BCE3-DFBF-475D-BB38-76F82BFEA447}|DataAccess\\DataAccess.csproj|c:\\users\\edanu\\source\\repos\\busticket\\dataaccess\\abstract\\itriprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8964BCE3-DFBF-475D-BB38-76F82BFEA447}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\abstract\\itriprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|c:\\users\\edanu\\source\\repos\\busticket\\business\\concrete\\seatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\concrete\\seatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|c:\\users\\edanu\\source\\repos\\busticket\\business\\abstract\\ibusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\abstract\\ibusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|c:\\users\\edanu\\source\\repos\\busticket\\entities\\concrete\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|solutionrelative:entities\\concrete\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|c:\\users\\edanu\\source\\repos\\busticket\\business\\dto\\updatebusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\dto\\updatebusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|c:\\users\\edanu\\source\\repos\\busticket\\business\\dto\\updatetripdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\dto\\updatetripdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|c:\\users\\edanu\\source\\repos\\busticket\\entities\\concrete\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|solutionrelative:entities\\concrete\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|c:\\users\\edanu\\source\\repos\\busticket\\entities\\concrete\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|solutionrelative:entities\\concrete\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|c:\\users\\edanu\\source\\repos\\busticket\\entities\\concrete\\bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|solutionrelative:entities\\concrete\\bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{194C1F5F-1BF3-44E8-B18C-B0B279C23F8A}|WebAPII\\WebAPII.csproj|c:\\users\\edanu\\source\\repos\\busticket\\webapii\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{194C1F5F-1BF3-44E8-B18C-B0B279C23F8A}|WebAPII\\WebAPII.csproj|solutionrelative:webapii\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\business\\concrete\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\concrete\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|c:\\users\\edanu\\source\\repos\\busticket\\business\\abstract\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\abstract\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|c:\\users\\edanu\\source\\repos\\busticket\\business\\dto\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\dto\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{194C1F5F-1BF3-44E8-B18C-B0B279C23F8A}|WebAPII\\WebAPII.csproj|c:\\users\\edanu\\source\\repos\\busticket\\webapii\\controllers\\tripscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{194C1F5F-1BF3-44E8-B18C-B0B279C23F8A}|WebAPII\\WebAPII.csproj|solutionrelative:webapii\\controllers\\tripscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|c:\\users\\edanu\\source\\repos\\busticket\\business\\concrete\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\concrete\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8964BCE3-DFBF-475D-BB38-76F82BFEA447}|DataAccess\\DataAccess.csproj|c:\\users\\edanu\\source\\repos\\busticket\\dataaccess\\abstract\\itriprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8964BCE3-DFBF-475D-BB38-76F82BFEA447}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\abstract\\itriprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|c:\\users\\edanu\\source\\repos\\busticket\\business\\concrete\\busmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\business\\concrete\\seatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\concrete\\seatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\business\\abstract\\ibusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\abstract\\ibusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\entities\\concrete\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|solutionrelative:entities\\concrete\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\business\\dto\\updatebusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\dto\\updatebusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\business\\dto\\updatetripdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\dto\\updatetripdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\entities\\concrete\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|solutionrelative:entities\\concrete\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\entities\\concrete\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|solutionrelative:entities\\concrete\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\entities\\concrete\\bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|solutionrelative:entities\\concrete\\bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\business\\concrete\\busmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\concrete\\busmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|c:\\users\\edanu\\source\\repos\\busticket\\business\\dto\\createtripdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\business\\dto\\createtripdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\dto\\createtripdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|c:\\users\\edanu\\source\\repos\\busticket\\business\\concrete\\ticketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\business\\concrete\\ticketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\concrete\\ticketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|c:\\users\\edanu\\source\\repos\\busticket\\business\\abstract\\iseatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\business\\abstract\\iseatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\abstract\\iseatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|c:\\users\\edanu\\source\\repos\\busticket\\business\\dto\\deletetripdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\business\\dto\\deletetripdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\dto\\deletetripdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -83,32 +91,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SeatManager.cs",
-              "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Concrete\\SeatManager.cs",
-              "RelativeDocumentMoniker": "Business\\Concrete\\SeatManager.cs",
-              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Concrete\\SeatManager.cs*",
-              "RelativeToolTip": "Business\\Concrete\\SeatManager.cs*",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Title": "UserManager.cs",
+              "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Concrete\\UserManager.cs",
+              "RelativeDocumentMoniker": "Business\\Concrete\\UserManager.cs",
+              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Concrete\\UserManager.cs",
+              "RelativeToolTip": "Business\\Concrete\\UserManager.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAApwEwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T23:47:58.874Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UpdateTripDTO.cs",
-              "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\DTO\\UpdateTripDTO.cs",
-              "RelativeDocumentMoniker": "Business\\DTO\\UpdateTripDTO.cs",
-              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\DTO\\UpdateTripDTO.cs",
-              "RelativeToolTip": "Business\\DTO\\UpdateTripDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T23:47:32.795Z",
+              "WhenOpened": "2024-12-08T23:03:06.487Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "TripsController.cs",
+              "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\WebAPII\\Controllers\\TripsController.cs",
+              "RelativeDocumentMoniker": "WebAPII\\Controllers\\TripsController.cs",
+              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\WebAPII\\Controllers\\TripsController.cs",
+              "RelativeToolTip": "WebAPII\\Controllers\\TripsController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T23:15:17.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Abstract\\IUserService.cs",
+              "RelativeDocumentMoniker": "Business\\Abstract\\IUserService.cs",
+              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Abstract\\IUserService.cs",
+              "RelativeToolTip": "Business\\Abstract\\IUserService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAUwBIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T22:28:08.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\WebAPII\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "WebAPII\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\WebAPII\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "WebAPII\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAawEwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T23:18:03.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\DTO\\CreateUserDTO.cs",
+              "RelativeDocumentMoniker": "Business\\DTO\\CreateUserDTO.cs",
+              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\DTO\\CreateUserDTO.cs",
+              "RelativeToolTip": "Business\\DTO\\CreateUserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T22:26:55.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "UpdateBusDTO.cs",
               "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\DTO\\UpdateBusDTO.cs",
               "RelativeDocumentMoniker": "Business\\DTO\\UpdateBusDTO.cs",
@@ -116,17 +163,40 @@
               "RelativeToolTip": "Business\\DTO\\UpdateBusDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T23:47:17.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T23:47:17.69Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
+              "Title": "UpdateTripDTO.cs",
+              "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\DTO\\UpdateTripDTO.cs",
+              "RelativeDocumentMoniker": "Business\\DTO\\UpdateTripDTO.cs",
+              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\DTO\\UpdateTripDTO.cs",
+              "RelativeToolTip": "Business\\DTO\\UpdateTripDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T23:47:32.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SeatManager.cs",
+              "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Concrete\\SeatManager.cs",
+              "RelativeDocumentMoniker": "Business\\Concrete\\SeatManager.cs",
+              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Concrete\\SeatManager.cs",
+              "RelativeToolTip": "Business\\Concrete\\SeatManager.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T23:47:58.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ITripRepository.cs",
               "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\DataAccess\\Abstract\\ITripRepository.cs",
               "RelativeDocumentMoniker": "DataAccess\\Abstract\\ITripRepository.cs",
-              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\DataAccess\\Abstract\\ITripRepository.cs*",
-              "RelativeToolTip": "DataAccess\\Abstract\\ITripRepository.cs*",
+              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\DataAccess\\Abstract\\ITripRepository.cs",
+              "RelativeToolTip": "DataAccess\\Abstract\\ITripRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T23:44:24.708Z",
@@ -134,46 +204,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Seat.cs",
               "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Concrete\\Seat.cs",
               "RelativeDocumentMoniker": "Entities\\Concrete\\Seat.cs",
-              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Concrete\\Seat.cs*",
-              "RelativeToolTip": "Entities\\Concrete\\Seat.cs*",
+              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Concrete\\Seat.cs",
+              "RelativeToolTip": "Entities\\Concrete\\Seat.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T22:45:50.361Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T22:45:50.361Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TripsController.cs",
-              "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\WebAPII\\Controllers\\TripsController.cs",
-              "RelativeDocumentMoniker": "WebAPII\\Controllers\\TripsController.cs",
-              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\WebAPII\\Controllers\\TripsController.cs",
-              "RelativeToolTip": "WebAPII\\Controllers\\TripsController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAADYAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T23:15:17.551Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Trip.cs",
               "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Concrete\\Trip.cs",
               "RelativeDocumentMoniker": "Entities\\Concrete\\Trip.cs",
-              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Concrete\\Trip.cs*",
-              "RelativeToolTip": "Entities\\Concrete\\Trip.cs*",
+              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Concrete\\Trip.cs",
+              "RelativeToolTip": "Entities\\Concrete\\Trip.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T22:47:05.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T22:47:05.512Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "IBusService.cs",
               "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Abstract\\IBusService.cs",
               "RelativeDocumentMoniker": "Business\\Abstract\\IBusService.cs",
@@ -181,38 +236,11 @@
               "RelativeToolTip": "Business\\Abstract\\IBusService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T22:49:31.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T22:49:31.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\WebAPII\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "WebAPII\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\WebAPII\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "WebAPII\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAADcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T23:18:03.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UserManager.cs",
-              "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Concrete\\UserManager.cs",
-              "RelativeDocumentMoniker": "Business\\Concrete\\UserManager.cs",
-              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Concrete\\UserManager.cs",
-              "RelativeToolTip": "Business\\Concrete\\UserManager.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAgwCEAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T23:03:06.487Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "BusManager.cs",
               "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Concrete\\BusManager.cs",
               "RelativeDocumentMoniker": "Business\\Concrete\\BusManager.cs",
@@ -220,38 +248,35 @@
               "RelativeToolTip": "Business\\Concrete\\BusManager.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T22:51:55.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T22:51:55.513Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Ticket.cs",
               "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Concrete\\Ticket.cs",
               "RelativeDocumentMoniker": "Entities\\Concrete\\Ticket.cs",
-              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Concrete\\Ticket.cs*",
-              "RelativeToolTip": "Entities\\Concrete\\Ticket.cs*",
+              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Concrete\\Ticket.cs",
+              "RelativeToolTip": "Entities\\Concrete\\Ticket.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T22:46:37.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Bus.cs",
-              "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Concrete\\Bus.cs",
-              "RelativeDocumentMoniker": "Entities\\Concrete\\Bus.cs",
-              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Concrete\\Bus.cs*",
-              "RelativeToolTip": "Entities\\Concrete\\Bus.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T23:41:28.611Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T22:46:37.031Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "Bus.cs",
+              "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Concrete\\Bus.cs",
+              "RelativeDocumentMoniker": "Entities\\Concrete\\Bus.cs",
+              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Concrete\\Bus.cs",
+              "RelativeToolTip": "Entities\\Concrete\\Bus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T23:41:28.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "CreateTripDTO.cs",
               "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\DTO\\CreateTripDTO.cs",
               "RelativeDocumentMoniker": "Business\\DTO\\CreateTripDTO.cs",
@@ -259,38 +284,35 @@
               "RelativeToolTip": "Business\\DTO\\CreateTripDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T22:47:25.961Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "TicketManager.cs",
-              "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Concrete\\TicketManager.cs",
-              "RelativeDocumentMoniker": "Business\\Concrete\\TicketManager.cs",
-              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Concrete\\TicketManager.cs*",
-              "RelativeToolTip": "Business\\Concrete\\TicketManager.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T22:56:44.121Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ISeatService.cs",
-              "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Abstract\\ISeatService.cs",
-              "RelativeDocumentMoniker": "Business\\Abstract\\ISeatService.cs",
-              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Abstract\\ISeatService.cs*",
-              "RelativeToolTip": "Business\\Abstract\\ISeatService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T22:50:19.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T22:47:25.961Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
+              "Title": "TicketManager.cs",
+              "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Concrete\\TicketManager.cs",
+              "RelativeDocumentMoniker": "Business\\Concrete\\TicketManager.cs",
+              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Concrete\\TicketManager.cs",
+              "RelativeToolTip": "Business\\Concrete\\TicketManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T22:56:44.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ISeatService.cs",
+              "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Abstract\\ISeatService.cs",
+              "RelativeDocumentMoniker": "Business\\Abstract\\ISeatService.cs",
+              "ToolTip": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Abstract\\ISeatService.cs",
+              "RelativeToolTip": "Business\\Abstract\\ISeatService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T22:50:19.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "DeleteTripDTO.cs",
               "DocumentMoniker": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\DTO\\DeleteTripDTO.cs",
               "RelativeDocumentMoniker": "Business\\DTO\\DeleteTripDTO.cs",
@@ -298,8 +320,7 @@
               "RelativeToolTip": "Business\\DTO\\DeleteTripDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T22:48:38.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T22:48:38.268Z"
             }
           ]
         }

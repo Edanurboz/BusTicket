@@ -403,6 +403,27 @@
   },
   {
     "ContainingType": "WebAPII.Controllers.UsersController",
+    "Method": "Login",
+    "RelativePath": "api/Users/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPII.Controllers.UsersController",
     "Method": "UpdateUser",
     "RelativePath": "api/Users/UpdateUser",
     "HttpMethod": "PUT",

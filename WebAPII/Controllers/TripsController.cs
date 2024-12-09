@@ -53,7 +53,7 @@ namespace WebAPII.Controllers
         public IActionResult DeleteTrip([FromBody] DeleteTripDTO request)
         {
             _tripService.DeleteTrip(request);
-            return NoContent();
+            return Ok();
         }
     }
 }

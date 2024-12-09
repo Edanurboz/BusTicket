@@ -1,10 +1,12 @@
 ﻿using Business.Abstract;
 using Business.DTO;
 using DataAccess.Abstract;
+using DataAccess.Concrete;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,10 +15,12 @@ namespace Business.Concrete
     public class UserManager : IUserService
     {
         IUserRepository _userRepository;
+        BiletOtomasyonu _context;
 
-        public UserManager(IUserRepository userRepository)
+        public UserManager(IUserRepository userRepository,BiletOtomasyonu context)
         {
             _userRepository = userRepository;
+            _context = context;
 
         }
 
@@ -64,6 +68,16 @@ namespace Business.Concrete
             if (user == null)
             {
                 throw new KeyNotFoundException("Bu kullanıcı bulunamadı.");
+            }
+            return user;
+        }
+
+        public User Login(string email, string password)
+        {
+            var user =_userRepository.Get(u=>u.email== email & u.password==password);
+            if (user == null)
+            {
+                return user; 
             }
             return user;
         }
