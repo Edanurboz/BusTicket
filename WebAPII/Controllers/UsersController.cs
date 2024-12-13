@@ -3,6 +3,8 @@ using Business.DTO;
 using Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using WebAPII.Security;
 
 namespace WebAPII.Controllers
 {
@@ -11,10 +13,12 @@ namespace WebAPII.Controllers
     public class UsersController : ControllerBase
     {
         IUserService _userService;
+        IConfiguration _configuration;
 
-        public UsersController(IUserService userService)
+        public UsersController(IUserService userService, IConfiguration configuration)
         {
             _userService = userService;
+            _configuration = configuration;
         }
 
         [HttpGet]
@@ -39,6 +43,7 @@ namespace WebAPII.Controllers
         public IActionResult CreateUser([FromBody] CreateUserDTO request)
         {
             string sonuc= _userService.CreateUser(request);
+            Token token = MyTokenHandler.CreateToken(_configuration);
             return Ok(sonuc);
         }
 
@@ -72,9 +77,11 @@ namespace WebAPII.Controllers
             var user = _userService.Login(email,password);
             if (user == null)
             {
-                return Ok("Kullanıcı adı veya şifre hatalı.");
+                return Unauthorized("Kullanıcı adı veya şifre hatalı.");
             }
-            return Ok("Kullanıcı girişi başarılı");
+            Token token = MyTokenHandler.CreateToken(_configuration);
+            return Ok(new { AccessToken = token.AccessToken, RefreshToken = token.RefreshToken });
+
         }
     }
 }

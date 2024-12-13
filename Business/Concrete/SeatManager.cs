@@ -52,18 +52,6 @@ namespace Business.Concrete
         }
 
 
-        public List<Seat> GetAvailableSeats(int tripId)
-        {
-            if (tripId > 0)
-            {
-                return _seatRepository.GetAvailableSeats(tripId);
-            }
-            else
-            {
-                throw new ArgumentException("Trip ID must be greater than zero");
-            }
-        }
-
         public Seat GetById(int id)
         {
             return _seatRepository.Get(s => s.seat_id == id);

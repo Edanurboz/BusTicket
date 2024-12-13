@@ -58,6 +58,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WebAPII.Controllers.JWTController",
+    "Method": "Get",
+    "RelativePath": "api/JWT",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebAPII.Controllers.SeatsController",
     "Method": "CreateSeat",
     "RelativePath": "api/Seats/CreateSeat",

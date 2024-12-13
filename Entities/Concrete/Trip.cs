@@ -17,10 +17,8 @@ namespace Entities.Concrete
         public int departure_time { get; set; }
         public int price { get; set; }
         public DateTime date_  { get; set; }
-        public int bus_id { get; set; }
-        public Bus Bus { get; set; }
 
         public ICollection<Ticket> Tickets { get; set; }
-        public ICollection<Seat> Seats { get; set; }
+        public ICollection<Bus> Buses { get; set; }
     }
 }

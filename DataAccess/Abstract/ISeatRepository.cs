@@ -9,7 +9,7 @@ namespace DataAccess.Abstract
 {
     public interface ISeatRepository : IEntityRepository<Seat>
     {
-        List<Seat> GetAvailableSeats(int tripId);
+       
         Seat GetSeatDetails(int seatId);
         void ReserveSeat(int seatId);
         void ReleaseSeat(int seatId);

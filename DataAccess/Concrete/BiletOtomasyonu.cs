@@ -55,11 +55,12 @@ namespace DataAccess.Concrete
             {
                 entity.HasKey(t => t.ticket_id);
 
-                entity.Property(t => t.seat_number)
-                      .IsRequired();
-
                 entity.Property(t => t.is_cancelled)
                       .IsRequired();
+                entity.Property(t => t.trip_id);
+                entity.Property(t => t.user_id);
+                entity.Property(t => t.seat_id);
+                entity.Property(t => t.bus_id);
 
                 entity.HasOne(t => t.Trip)
                       .WithMany(tr => tr.Tickets)
@@ -70,6 +71,17 @@ namespace DataAccess.Concrete
                       .WithMany(u => u.Tickets)
                       .HasForeignKey(t => t.user_id)
                       .OnDelete(DeleteBehavior.Cascade);
+
+                entity.HasOne(t => t.Seat)
+                     .WithMany(u => u.Tickets)
+                     .HasForeignKey(t => t.seat_id)
+                     .OnDelete(DeleteBehavior.Cascade);
+
+                entity.HasOne(t => t.Bus)
+                  .WithMany(u => u.Tickets)
+                  .HasForeignKey(t => t.bus_id)
+                  .OnDelete(DeleteBehavior.Cascade);
+
             });
 
             // Trip Entity
@@ -99,15 +111,11 @@ namespace DataAccess.Concrete
                       .HasForeignKey(t => t.trip_id)
                       .OnDelete(DeleteBehavior.Restrict);
 
-                entity.HasMany(tr => tr.Seats)
-                      .WithOne(s => s.Trip)
-                      .HasForeignKey(s => s.trip_id)
-                      .OnDelete(DeleteBehavior.Cascade);
+                entity.HasMany(tr => tr.Buses)
+                      .WithOne(t => t.Trip)
+                      .HasForeignKey(t=>t.trip_id)
+                      .OnDelete(DeleteBehavior.SetNull);
 
-                entity.HasOne(tr => tr.Bus)
-                      .WithMany(b => b.Trips)
-                      .HasForeignKey(tr => tr.bus_id)
-                      .OnDelete(DeleteBehavior.SetNull); // Bus silinirse, bus_id null olur
             });
 
             // Seat Entity
@@ -121,10 +129,18 @@ namespace DataAccess.Concrete
                 entity.Property(s => s.is_reserved)
                       .IsRequired();
 
-                entity.HasOne(s => s.Trip)
-                      .WithMany(tr => tr.Seats)
-                      .HasForeignKey(s => s.trip_id)
-                      .OnDelete(DeleteBehavior.Cascade);
+                entity.Property(s => s.bus_id);
+
+                entity.HasOne(s => s.Bus)  // Seat bir Bus'a bağlı
+                       .WithMany(b => b.Seats) // Bus, birden çok Seat'a sahip olabilir
+                       .HasForeignKey(s => s.bus_id) // Seat tablosunda bus_id yabancı anahtar olarak kullanılır
+                       .OnDelete(DeleteBehavior.Cascade);
+
+                entity.HasMany(s => s.Tickets) // Seat'ın birden fazla Ticket'ı olabilir
+                      .WithOne(t => t.Seat) // Her Ticket bir Seat'a ait
+                      .HasForeignKey(t => t.seat_id) // Ticket tablosunda seat_id yabancı anahtar
+                      .OnDelete(DeleteBehavior.Restrict); // Seat silinirse, Ticket'lar etkilenmez
+ 
             });
 
             // Bus Entity
@@ -138,7 +154,28 @@ namespace DataAccess.Concrete
 
                 entity.Property(b => b.company)
                       .HasMaxLength(50);
-            });
+
+                entity.Property(b => b.trip_id);
+
+                // Bus -> Trip: Her Bus bir Trip'e ait
+                entity.HasOne(b => b.Trip)  // Bus bir Trip'e bağlı
+                      .WithMany(t => t.Buses)  // Trip, birden fazla Bus'a sahip olabilir
+                      .HasForeignKey(b => b.trip_id) // Bus tablosunda trip_id yabancı anahtar olarak kullanılır
+                      .OnDelete(DeleteBehavior.Cascade); // Trip silinirse, ilgili Bus'lar da silinir
+
+                // Bus -> Seat: Bir Bus birden çok Seat'a sahip olabilir
+                entity.HasMany(b => b.Seats) // Bus birden fazla Seat'a sahip
+                      .WithOne(s => s.Bus) // Her Seat bir Bus'a ait
+                      .HasForeignKey(s => s.bus_id) // Seat tablosunda bus_id yabancı anahtar
+                      .OnDelete(DeleteBehavior.Cascade); // Bus silinirse, ilgili Seat'lar da silinir
+
+                // Bus -> Ticket: Bir Bus birden çok Ticket'a sahip olabilir
+                entity.HasMany(b => b.Tickets) // Bus birden fazla Ticket'a sahip
+                      .WithOne(t => t.Bus) // Her Ticket bir Bus'a ait
+                      .HasForeignKey(t => t.bus_id) // Ticket tablosunda bus_id yabancı anahtar
+                      .OnDelete(DeleteBehavior.Cascade); // Bus silinirse, ilgili Ticket'lar da silinir
+        });
+        
         }
 
         public DbSet<Seat> Seats { get; set; }

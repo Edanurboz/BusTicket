@@ -27,7 +27,6 @@ namespace Business.Concrete
             newTrip.price = trip.price;
             newTrip.departure_time = trip.departure_time;
             newTrip.departure_city = trip.departure_city;
-            newTrip.bus_id = trip.bus_id;
             newTrip.date_= trip.date_;
             _tripRepository.Create(newTrip);
 
@@ -76,7 +75,6 @@ namespace Business.Concrete
             newTrip.price = trip.price;
             newTrip.departure_time = trip.departure_time;
             newTrip.departure_city = trip.departure_city;
-            newTrip.bus_id = trip.bus_id;
             newTrip.date_ = trip.date_;
             _tripRepository.Update(newTrip);
         }

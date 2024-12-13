@@ -12,10 +12,17 @@ namespace Entities.Concrete
     {
         [Key]
         public int seat_id { get; set; }
-        public int trip_id { get; set; }
         public int seat_number { get; set; }
         public bool is_reserved { get; set; }
+        public int bus_id { get; set; }
 
-        public Trip Trip { get; set; }
+        public Bus Bus {  get; set; }
+
+        public ICollection<Ticket> Tickets { get; set; }
+        
+
+
+
+
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WebAPII.Security
 {
-    public class TokenHandler
+    public class MyTokenHandler
     {
         public static Token CreateToken(IConfiguration configuration)
         {

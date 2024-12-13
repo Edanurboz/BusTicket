@@ -80,6 +80,7 @@ namespace Business.Concrete
                 return user; 
             }
             return user;
+            _context.SaveChanges();
         }
 
         public void UpdateUser(UpdateUserDTO user)

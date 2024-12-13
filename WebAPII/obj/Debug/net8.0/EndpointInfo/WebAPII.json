@@ -110,6 +110,18 @@
         }
       }
     },
+    "/api/JWT": {
+      "get": {
+        "tags": [
+          "JWT"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Seats/GetAllSeats": {
       "get": {
         "tags": [
@@ -779,10 +791,24 @@
             "type": "string",
             "nullable": true
           },
-          "trips": {
+          "trip_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "trip": {
+            "$ref": "#/components/schemas/Trip"
+          },
+          "seats": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Trip"
+              "$ref": "#/components/schemas/Seat"
+            },
+            "nullable": true
+          },
+          "tickets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ticket"
             },
             "nullable": true
           }
@@ -825,10 +851,6 @@
           "date_": {
             "type": "string",
             "format": "date-time"
-          },
-          "bus_id": {
-            "type": "integer",
-            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -896,10 +918,6 @@
             "type": "integer",
             "format": "int32"
           },
-          "trip_id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "seat_number": {
             "type": "integer",
             "format": "int32"
@@ -907,8 +925,19 @@
           "is_reserved": {
             "type": "boolean"
           },
-          "trip": {
-            "$ref": "#/components/schemas/Trip"
+          "bus_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bus": {
+            "$ref": "#/components/schemas/Bus"
+          },
+          "tickets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ticket"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -928,7 +957,11 @@
             "type": "integer",
             "format": "int32"
           },
-          "seat_number": {
+          "seat_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bus_id": {
             "type": "integer",
             "format": "int32"
           },
@@ -940,6 +973,12 @@
           },
           "user": {
             "$ref": "#/components/schemas/User"
+          },
+          "seat": {
+            "$ref": "#/components/schemas/Seat"
+          },
+          "bus": {
+            "$ref": "#/components/schemas/Bus"
           }
         },
         "additionalProperties": false
@@ -971,13 +1010,6 @@
             "type": "string",
             "format": "date-time"
           },
-          "bus_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "bus": {
-            "$ref": "#/components/schemas/Bus"
-          },
           "tickets": {
             "type": "array",
             "items": {
@@ -985,10 +1017,10 @@
             },
             "nullable": true
           },
-          "seats": {
+          "buses": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Seat"
+              "$ref": "#/components/schemas/Bus"
             },
             "nullable": true
           }

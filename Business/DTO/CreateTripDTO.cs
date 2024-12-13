@@ -13,6 +13,5 @@ namespace Business.DTO
         public int departure_time { get; set; }
         public int price { get; set; }
         public DateTime date_ { get; set; }
-        public int bus_id { get; set; }
     }
 }

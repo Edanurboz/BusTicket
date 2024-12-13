@@ -15,7 +15,6 @@ namespace Business.Abstract
         void Delete(Seat seat);
         Seat GetById(int id);
         List<Seat> GetAll();
-        List<Seat> GetAvailableSeats(int tripId);
         Seat GetSeatDetails(int seatId);
         void ReserveSeat(int seatId);
         void ReleaseSeat(int seatId);

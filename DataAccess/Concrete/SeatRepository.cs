@@ -18,15 +18,11 @@ namespace DataAccess.Concrete
             _context = context;
         }
 
-        public List<Seat> GetAvailableSeats(int tripId)
-        {
-            // Belirli bir seferdeki mevcut (boş) koltukları getirme
-            return _context.Seats.Where(s => s.trip_id == tripId && !s.is_reserved).ToList();
-        }
+        
 
         public Seat GetSeatDetails(int seatId)
         {
-            return _context.Seats.Include(s => s.Trip).FirstOrDefault(s => s.seat_id == seatId);
+            return _context.Seats.Include(s => s.Bus).FirstOrDefault(s => s.seat_id == seatId);
         }
 
         public void ReleaseSeat(int seatId)
