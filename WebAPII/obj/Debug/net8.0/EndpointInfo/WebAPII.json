@@ -1150,19 +1150,19 @@
       "UpdateUserDTO": {
         "type": "object",
         "properties": {
-          "user_id": {
-            "type": "integer",
-            "format": "int32"
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "gender": {
+            "type": "string",
+            "nullable": true
+          },
+          "identity_": {
+            "type": "string",
+            "nullable": true
           },
           "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "surname": {
-            "type": "string",
-            "nullable": true
-          },
-          "email": {
             "type": "string",
             "nullable": true
           },
@@ -1174,13 +1174,13 @@
             "type": "string",
             "nullable": true
           },
-          "gender": {
+          "surname": {
             "type": "string",
             "nullable": true
           },
-          "identity_": {
-            "type": "string",
-            "nullable": true
+          "user_id": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
