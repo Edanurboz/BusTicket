@@ -85,6 +85,22 @@
   },
   {
     "ContainingType": "WebAPII.Controllers.SeatsController",
+    "Method": "GetSeatById",
+    "RelativePath": "api/Seats/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPII.Controllers.SeatsController",
     "Method": "CreateSeat",
     "RelativePath": "api/Seats/CreateSeat",
     "HttpMethod": "POST",
@@ -123,22 +139,6 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebAPII.Controllers.SeatsController",
-    "Method": "GetSeatById",
-    "RelativePath": "api/Seats/GetSeatById",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
     "ReturnTypes": []
   },
   {
@@ -196,13 +196,7 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

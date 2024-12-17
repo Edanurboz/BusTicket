@@ -13,7 +13,7 @@ namespace Business.Abstract
         void UpdateTicket(Ticket ticket);
         void DeleteTicket(Ticket ticket);
         Ticket GetTicketById(int id);
-        List<Ticket> GetAllTickets(int ticket_id);
+        List<Ticket> GetAllTickets();
         List<Ticket> GetTicketsByTripId(int tripId);
         Ticket GetTicketDetails(int ticketId);
         void CancelTicket(int ticketId);

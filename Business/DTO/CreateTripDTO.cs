@@ -10,6 +10,7 @@ namespace Business.DTO
     {
         public string departure_city { get; set; }
         public string arrival_city { get; set; }
+
         public DateTime date_ { get; set; }
     }
 }

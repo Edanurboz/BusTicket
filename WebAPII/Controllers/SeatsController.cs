@@ -25,7 +25,7 @@ namespace WebAPII.Controllers
             return Ok(seats);
         }
 
-        [HttpGet("GetSeatById")]
+        [HttpGet("{id}")]
         public IActionResult GetSeatById(int id)
         {
             var seat = _seatService.GetById(id);

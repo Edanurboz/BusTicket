@@ -17,9 +17,9 @@ namespace WebAPII.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAllTickets(int id)
+        public IActionResult GetAllTickets()
         {
-            var tickets = _ticketService.GetAllTickets(id);
+            var tickets = _ticketService.GetAllTickets();
             return Ok(tickets);
         }
 

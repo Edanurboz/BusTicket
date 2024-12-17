@@ -56,7 +56,7 @@ namespace Business.Concrete
             }
         }
 
-        public List<Ticket> GetAllTickets(int id)
+        public List<Ticket> GetAllTickets()
         {
             return _ticketRepository.GetAll();
         }
