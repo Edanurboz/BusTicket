@@ -13,5 +13,7 @@ namespace Business.DTO
         public string email { get; set; }
         public string password { get; set; }
         public string phone_number { get; set; }
+        public string gender { get; set; }
+        public string identity_ { get; set; }
     }
 }

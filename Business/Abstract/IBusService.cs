@@ -14,5 +14,6 @@ namespace Business.Abstract
         void Update(UpdateBusDTO bus);
         void Delete(DeleteBusDTO busId);
         List<Bus> GetAll();
+        object GetBusById(int id);
     }
 }

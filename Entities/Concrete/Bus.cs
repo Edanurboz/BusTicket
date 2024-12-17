@@ -15,6 +15,8 @@ namespace Entities.Concrete
         public string plate_number { get; set; }
         public string company { get; set; }
         public int trip_id { get; set; }
+        public int price { get; set; }
+        public int departure_time { get; set; }
 
         public Trip Trip { get; set; }
         public ICollection<Seat> Seats { get; set; }

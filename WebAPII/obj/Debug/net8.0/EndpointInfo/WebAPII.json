@@ -110,6 +110,28 @@
         }
       }
     },
+    "/api/Buses/GetBusById": {
+      "get": {
+        "tags": [
+          "Buses"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/JWT": {
       "get": {
         "tags": [
@@ -165,17 +187,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Seat"
+                "$ref": "#/components/schemas/CreateSeatDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Seat"
+                "$ref": "#/components/schemas/CreateSeatDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Seat"
+                "$ref": "#/components/schemas/CreateSeatDTO"
               }
             }
           }
@@ -192,31 +214,21 @@
         "tags": [
           "Seats"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Seat"
+                "$ref": "#/components/schemas/UpdateSeatDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Seat"
+                "$ref": "#/components/schemas/UpdateSeatDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Seat"
+                "$ref": "#/components/schemas/UpdateSeatDTO"
               }
             }
           }
@@ -233,16 +245,25 @@
         "tags": [
           "Seats"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteSeatDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteSeatDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteSeatDTO"
+              }
             }
           }
-        ],
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -795,6 +816,14 @@
             "type": "integer",
             "format": "int32"
           },
+          "price": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "departure_time": {
+            "type": "integer",
+            "format": "int32"
+          },
           "trip": {
             "$ref": "#/components/schemas/Trip"
           },
@@ -825,6 +854,35 @@
           "company": {
             "type": "string",
             "nullable": true
+          },
+          "trip_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "price": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "departure_time": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateSeatDTO": {
+        "type": "object",
+        "properties": {
+          "seat_number": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "is_reserved": {
+            "type": "boolean"
+          },
+          "bus_id": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -839,14 +897,6 @@
           "arrival_city": {
             "type": "string",
             "nullable": true
-          },
-          "departure_time": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "price": {
-            "type": "integer",
-            "format": "int32"
           },
           "date_": {
             "type": "string",
@@ -877,6 +927,14 @@
           "phone_number": {
             "type": "string",
             "nullable": true
+          },
+          "gender": {
+            "type": "string",
+            "nullable": true
+          },
+          "identity_": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -885,6 +943,16 @@
         "type": "object",
         "properties": {
           "bus_id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeleteSeatDTO": {
+        "type": "object",
+        "properties": {
+          "seat_id": {
             "type": "integer",
             "format": "int32"
           }
@@ -957,6 +1025,9 @@
             "type": "integer",
             "format": "int32"
           },
+          "is_cancelled": {
+            "type": "boolean"
+          },
           "seat_id": {
             "type": "integer",
             "format": "int32"
@@ -964,9 +1035,6 @@
           "bus_id": {
             "type": "integer",
             "format": "int32"
-          },
-          "is_cancelled": {
-            "type": "boolean"
           },
           "trip": {
             "$ref": "#/components/schemas/Trip"
@@ -998,14 +1066,6 @@
             "type": "string",
             "nullable": true
           },
-          "departure_time": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "price": {
-            "type": "integer",
-            "format": "int32"
-          },
           "date_": {
             "type": "string",
             "format": "date-time"
@@ -1030,6 +1090,10 @@
       "UpdateBusDTO": {
         "type": "object",
         "properties": {
+          "bus_id": {
+            "type": "integer",
+            "format": "int32"
+          },
           "plate_number": {
             "type": "string",
             "nullable": true
@@ -1037,6 +1101,35 @@
           "company": {
             "type": "string",
             "nullable": true
+          },
+          "trip_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "price": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "departure_time": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateSeatDTO": {
+        "type": "object",
+        "properties": {
+          "seat_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "seat_number": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "is_reserved": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -1044,6 +1137,10 @@
       "UpdateTripDTO": {
         "type": "object",
         "properties": {
+          "trip_id": {
+            "type": "integer",
+            "format": "int32"
+          },
           "departure_city": {
             "type": "string",
             "nullable": true
@@ -1052,21 +1149,9 @@
             "type": "string",
             "nullable": true
           },
-          "departure_time": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "price": {
-            "type": "integer",
-            "format": "int32"
-          },
           "date_": {
             "type": "string",
             "format": "date-time"
-          },
-          "bus_id": {
-            "type": "integer",
-            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -1074,6 +1159,10 @@
       "UpdateUserDTO": {
         "type": "object",
         "properties": {
+          "user_id": {
+            "type": "integer",
+            "format": "int32"
+          },
           "name": {
             "type": "string",
             "nullable": true
@@ -1091,6 +1180,14 @@
             "nullable": true
           },
           "phone_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "gender": {
+            "type": "string",
+            "nullable": true
+          },
+          "identity_": {
             "type": "string",
             "nullable": true
           }
@@ -1121,6 +1218,14 @@
             "nullable": true
           },
           "phone_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "gender": {
+            "type": "string",
+            "nullable": true
+          },
+          "identity_": {
             "type": "string",
             "nullable": true
           },

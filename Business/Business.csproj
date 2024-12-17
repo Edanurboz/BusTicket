@@ -227,13 +227,16 @@
     <Compile Include="Concrete\TripManager.cs" />
     <Compile Include="Concrete\UserManager.cs" />
     <Compile Include="DTO\CreateBusDTO.cs" />
+    <Compile Include="DTO\CreateSeatDTO.cs" />
     <Compile Include="DTO\CreateTripDTO.cs" />
     <Compile Include="DTO\CreateUserDTO.cs" />
     <Compile Include="DTO\DeleteBusDTO.cs" />
+    <Compile Include="DTO\DeleteSeatDTO.cs" />
     <Compile Include="DTO\DeleteTripDTO.cs" />
     <Compile Include="DTO\DeleteUserDTO.cs" />
     <Compile Include="DTO\LoginDTO.cs" />
     <Compile Include="DTO\UpdateBusDTO.cs" />
+    <Compile Include="DTO\UpdateSeatDTO.cs" />
     <Compile Include="DTO\UpdateTripDTO.cs" />
     <Compile Include="DTO\UpdateUserDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -57,7 +57,7 @@ namespace WebAPII.Controllers
         [HttpDelete("DeleteUser")]
         public IActionResult DeleteUser([FromBody] DeleteUserDTO request)
         {
-            _userService.DeleteUser(request);
+           _userService.DeleteUser(request);
             return Ok();
         }
 
@@ -80,7 +80,7 @@ namespace WebAPII.Controllers
                 return Unauthorized("Kullanıcı adı veya şifre hatalı.");
             }
             Token token = MyTokenHandler.CreateToken(_configuration);
-            return Ok(new { AccessToken = token.AccessToken, RefreshToken = token.RefreshToken });
+            return Ok(new { AccessToken = token.AccessToken, RefreshToken = token.RefreshToken,user });
 
         }
     }

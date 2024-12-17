@@ -43,6 +43,22 @@
   },
   {
     "ContainingType": "WebAPII.Controllers.BusesController",
+    "Method": "GetBusById",
+    "RelativePath": "api/Buses/GetBusById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPII.Controllers.BusesController",
     "Method": "UpdateBus",
     "RelativePath": "api/Buses/UpdateBus",
     "HttpMethod": "PUT",
@@ -76,8 +92,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "seat",
-        "Type": "Entities.Concrete.Seat",
+        "Name": "request",
+        "Type": "Business.DTO.CreateSeatDTO",
         "IsRequired": true
       }
     ],
@@ -92,9 +108,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "request",
+        "Type": "Business.DTO.DeleteSeatDTO",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -166,13 +182,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "seat",
-        "Type": "Entities.Concrete.Seat",
+        "Name": "request",
+        "Type": "Business.DTO.UpdateSeatDTO",
         "IsRequired": true
       }
     ],

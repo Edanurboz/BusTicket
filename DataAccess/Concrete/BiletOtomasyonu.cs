@@ -13,7 +13,7 @@ namespace DataAccess.Concrete
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
 
-            optionsBuilder.UseSqlServer(@"Server=LAPTOP-8F99LGJR\MSSQLSERVER02;Database=BiletOtomasyonu;Trusted_Connection=true;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer(@"Server=LAPTOP-8F99LGJR\MSSQLSERVER02;Database=BusTicket;Trusted_Connection=true;TrustServerCertificate=True;");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -34,13 +34,21 @@ namespace DataAccess.Concrete
 
                 entity.Property(u => u.email)
                       .IsRequired()
-                      .HasMaxLength(100);
+                      .HasMaxLength(50);
 
                 entity.Property(u => u.password)
                      .IsRequired()
-                     .HasMaxLength(10);
+                     .HasMaxLength(50);
 
                 entity.Property(u => u.phone_number)
+                     .IsRequired()
+                     .HasMaxLength(50);
+
+                entity.Property(u => u.gender)
+                     .IsRequired()
+                     .HasMaxLength(50);
+
+                entity.Property(u => u.identity_)
                      .IsRequired()
                      .HasMaxLength(50);
 
@@ -57,10 +65,18 @@ namespace DataAccess.Concrete
 
                 entity.Property(t => t.is_cancelled)
                       .IsRequired();
-                entity.Property(t => t.trip_id);
-                entity.Property(t => t.user_id);
-                entity.Property(t => t.seat_id);
-                entity.Property(t => t.bus_id);
+
+                entity.Property(t => t.trip_id)
+                      .IsRequired();
+
+                entity.Property(t => t.user_id)
+                      .IsRequired();
+
+                entity.Property(t => t.seat_id)
+                      .IsRequired();
+
+                entity.Property(t => t.bus_id)
+                      .IsRequired();
 
                 entity.HasOne(t => t.Trip)
                       .WithMany(tr => tr.Tickets)
@@ -97,12 +113,6 @@ namespace DataAccess.Concrete
                       .IsRequired()
                       .HasMaxLength(50);
 
-                entity.Property(tr => tr.departure_time)
-                      .IsRequired();
-
-                entity.Property(tr => tr.price)
-                      .IsRequired();
-
                 entity.Property(tr => tr.date_)
                      .IsRequired();
 
@@ -129,7 +139,8 @@ namespace DataAccess.Concrete
                 entity.Property(s => s.is_reserved)
                       .IsRequired();
 
-                entity.Property(s => s.bus_id);
+                entity.Property(s => s.bus_id)
+                      .IsRequired();
 
                 entity.HasOne(s => s.Bus)  // Seat bir Bus'a bağlı
                        .WithMany(b => b.Seats) // Bus, birden çok Seat'a sahip olabilir
@@ -153,9 +164,18 @@ namespace DataAccess.Concrete
                       .HasMaxLength(50);
 
                 entity.Property(b => b.company)
+                      .IsRequired()
                       .HasMaxLength(50);
 
-                entity.Property(b => b.trip_id);
+                entity.Property(b => b.trip_id)
+                      .IsRequired();
+
+                entity.Property(tr => tr.price)
+                      .IsRequired();
+
+               entity.Property(tr => tr.departure_time)
+                     .IsRequired();
+
 
                 // Bus -> Trip: Her Bus bir Trip'e ait
                 entity.HasOne(b => b.Trip)  // Bus bir Trip'e bağlı

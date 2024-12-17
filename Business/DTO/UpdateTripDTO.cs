@@ -8,11 +8,9 @@ namespace Business.DTO
 {
     public class UpdateTripDTO
     {
+        public int trip_id { get; set; }
         public string departure_city { get; set; }
         public string arrival_city { get; set; }
-        public int departure_time { get; set; }
-        public int price { get; set; }
         public DateTime date_ { get; set; }
-        public int bus_id { get; set; }
     }
 }

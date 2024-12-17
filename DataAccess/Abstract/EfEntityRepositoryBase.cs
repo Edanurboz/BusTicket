@@ -27,9 +27,17 @@ namespace DataAccess.Abstract
         {
             using (TContext context = new TContext())
             {
-                var deletedEntity = context.Entry(entity);
-                deletedEntity.State = EntityState.Deleted;
-                context.SaveChanges();
+                try
+                {
+                    var deletedEntity = context.Entry(entity);
+                    deletedEntity.State = EntityState.Deleted;
+                    context.SaveChanges();
+                }
+                catch (Exception ex)
+                {
+                    // Hata detaylarını loglayın veya fırlatın
+                    throw new Exception("Silme işlemi sırasında bir hata oluştu.", ex);
+                }
             }
         }
 

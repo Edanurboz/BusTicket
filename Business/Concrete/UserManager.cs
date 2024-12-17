@@ -35,6 +35,8 @@ namespace Business.Concrete
             newUser.password = user.password;
             newUser.surname = user.surname;
             newUser.phone_number = user.phone_number;
+            newUser.identity_=user.identity_;
+            newUser.gender = user.gender;
             _userRepository.Create(newUser);
 
             return "Kişi başarıyla eklendi.";
@@ -44,6 +46,7 @@ namespace Business.Concrete
         {
             var newUser = new User();
             newUser.user_id = user.user_id;
+           
         }
 
         public List<User> GetAllUsers()
@@ -80,19 +83,23 @@ namespace Business.Concrete
                 return user; 
             }
             return user;
-            _context.SaveChanges();
+            
         }
 
         public void UpdateUser(UpdateUserDTO user)
         {
            
             var newUser = new User();
+            newUser.user_id = user.user_id;
             newUser.name = user.name;
             newUser.email = user.email;
             newUser.password = user.password;
             newUser.surname = user.surname;
             newUser.phone_number = user.phone_number;
+            newUser.identity_ = user.identity_;
+            newUser.gender = user.gender;
             _userRepository.Update(newUser);
+            
         }
     }
 }

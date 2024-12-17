@@ -24,8 +24,6 @@ namespace Business.Concrete
         {
            var newTrip= new Trip();
             newTrip.arrival_city = trip.arrival_city;
-            newTrip.price = trip.price;
-            newTrip.departure_time = trip.departure_time;
             newTrip.departure_city = trip.departure_city;
             newTrip.date_= trip.date_;
             _tripRepository.Create(newTrip);
@@ -72,8 +70,6 @@ namespace Business.Concrete
 
             var newTrip = new Trip();
             newTrip.arrival_city = trip.arrival_city;
-            newTrip.price = trip.price;
-            newTrip.departure_time = trip.departure_time;
             newTrip.departure_city = trip.departure_city;
             newTrip.date_ = trip.date_;
             _tripRepository.Update(newTrip);

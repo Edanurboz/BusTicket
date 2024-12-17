@@ -41,6 +41,15 @@ namespace WebAPII.Controllers
             _busService.Update(request);
             return Ok();
         }
-
+        [HttpGet("GetBusById")]
+        public IActionResult GetBusById(int id)
+        {
+            var bus = _busService.GetBusById(id);
+            if (bus == null)
+            {
+                return Ok("Kullanıcı bulunamadı.");
+            }
+            return Ok(bus);
+        }
     }
 }

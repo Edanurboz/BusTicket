@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Business.DTO;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,9 @@ namespace Business.Abstract
     public interface ISeatService
     {
         //burada istediğini yaz fiyat aralığı vs
-        void Create(Seat seat); 
-        void Update(Seat seat);
-        void Delete(Seat seat);
+        string Create(CreateSeatDTO seat); 
+        void Update(UpdateSeatDTO seat);
+        void Delete(DeleteSeatDTO seat);
         Seat GetById(int id);
         List<Seat> GetAll();
         Seat GetSeatDetails(int seatId);

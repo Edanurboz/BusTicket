@@ -24,6 +24,9 @@ namespace Business.Concrete
             var newBus= new Bus();
             newBus.plate_number = bus.plate_number;
             newBus.company=bus.company;
+            newBus.price = bus.price;
+            newBus.departure_time = bus.departure_time;
+            newBus.trip_id = bus.trip_id;
             _busRepository.Create(newBus);
             return "Otobüs başarıyla eklendi.";
         }
@@ -39,11 +42,25 @@ namespace Business.Concrete
             return _busRepository.GetAll();
         }
 
+        public object GetBusById(int id)
+        {
+            var bus = _busRepository.Get(u => u.bus_id == id);
+            if (bus == null)
+            {
+                throw new KeyNotFoundException("Bu kullanıcı bulunamadı.");
+            }
+            return bus;
+        }
+
         public void Update(UpdateBusDTO bus)
         {
             var newBus = new Bus();
+            newBus.bus_id = bus.bus_id;
             newBus.plate_number = bus.plate_number;
             newBus.company = bus.company;
+            newBus.price = bus.price;
+            newBus.departure_time = bus.departure_time;
+            newBus.trip_id = bus.trip_id;
             _busRepository.Update(newBus);
         }
     }

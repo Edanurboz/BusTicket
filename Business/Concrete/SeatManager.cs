@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.DTO;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
@@ -18,30 +19,22 @@ namespace Business.Concrete
             _seatRepository = seatRepository;
         }
 
-        public void Create(Seat seat)
+        public string Create(CreateSeatDTO seat)
         {
-            if (seat != null)
-            {
-                _seatRepository.Create(seat);
-            }
-            else
-            {
-                throw new ArgumentNullException(nameof(seat), "Seat cannot be null");
-            }
+           var newSeat=new Seat();
+            newSeat.seat_number = seat.seat_number;
+            newSeat.is_reserved = seat.is_reserved;
+            newSeat.bus_id = seat.bus_id;
+            _seatRepository.Create(newSeat);
+            return "Koltuk başarıyla eklendi.";
         }
 
 
 
-        public void Delete(Seat seat)
+        public void Delete(DeleteSeatDTO seat)
         {
-            if (seat != null)
-            {
-                _seatRepository.Delete(seat);
-            }
-            else
-            {
-                throw new ArgumentNullException(nameof(seat), "Seat cannot be null");
-            }
+            var newSeat = new Seat();
+            newSeat.seat_id=seat.seat_id;
         }
 
 
@@ -90,16 +83,12 @@ namespace Business.Concrete
             }
         }
 
-        public void Update(Seat seat)
+        public void Update(UpdateSeatDTO seat)
         {
-            if (seat != null)
-            {
-                _seatRepository.Update(seat);
-            }
-            else
-            {
-                throw new ArgumentNullException(nameof(seat), "Seat cannot be null");
-            }
+            var newSeat= new Seat();
+            newSeat.seat_number = seat.seat_number;
+            newSeat.is_reserved=seat.is_reserved;
+            _seatRepository.Update(newSeat);
         }
     }
 }

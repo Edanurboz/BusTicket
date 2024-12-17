@@ -17,8 +17,8 @@ namespace Entities.Concrete
         public string email { get; set; }
         public string password { get; set; }
         public string phone_number { get; set; }
-        
-
+        public string gender { get; set; }
+        public string identity_ { get; set; }
         public ICollection<Ticket> Tickets { get; set; }
 
     }

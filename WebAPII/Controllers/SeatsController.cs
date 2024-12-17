@@ -1,4 +1,6 @@
-﻿using Business.Abstract;
+﻿using Azure.Core;
+using Business.Abstract;
+using Business.DTO;
 using Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -35,49 +37,41 @@ namespace WebAPII.Controllers
         }
 
         [HttpPost("CreateSeat")]
-        public IActionResult CreateSeat([FromBody] Seat seat)
+        public IActionResult CreateSeat([FromBody] CreateSeatDTO request)
         {
-            _seatService.Create(seat);
-            return CreatedAtAction(nameof(GetSeatById), new { id = seat.seat_id }, seat);
+            string sonuc = _seatService.Create(request);
+            return Ok(sonuc);
+
         }
 
         [HttpPut("UpdateSeat")]
-        public IActionResult UpdateSeat(int id, [FromBody] Seat seat)
+        public IActionResult UpdateSeat( [FromBody] UpdateSeatDTO request)
         {
-            if (id != seat.seat_id)
-            {
-                return BadRequest();
-            }
 
-            _seatService.Update(seat);
-            return NoContent();
+            _seatService.Update(request);
+            return Ok("Güncellendi.");
         }
 
         [HttpDelete("DeleteSeat")]
-        public IActionResult DeleteSeat(int id)
+        public IActionResult DeleteSeat([FromBody] DeleteSeatDTO request)
         {
-            var seat = _seatService.GetById(id);
-            if (seat == null)
-            {
-                return NotFound();
-            }
-
-            _seatService.Delete(seat);
-            return NoContent();
+            
+            _seatService.Delete(request);
+            return Ok("Silindi");
         }
 
         [HttpPost("ReserveSeat")]
         public IActionResult ReserveSeat(int seatId)
         {
             _seatService.ReserveSeat(seatId);
-            return NoContent();
+            return Ok();
         }
 
         [HttpPost("ReleaseSeat")]
         public IActionResult ReleaseSeat(int seatId)
         {
             _seatService.ReleaseSeat(seatId);
-            return NoContent();
+            return Ok();
         }
     }
 }
