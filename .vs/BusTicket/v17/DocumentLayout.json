@@ -15,15 +15,15 @@
       "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\abstract\\iticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|c:\\users\\edanu\\source\\repos\\busticket\\business\\dto\\deleteticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\business\\dto\\deleteticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\dto\\deleteticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|c:\\users\\edanu\\source\\repos\\busticket\\business\\dto\\updateticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\business\\dto\\updateticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\dto\\updateticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|c:\\users\\edanu\\source\\repos\\busticket\\business\\dto\\createticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\business\\dto\\createticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\dto\\createticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,11 +31,11 @@
       "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\concrete\\seatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|c:\\users\\edanu\\source\\repos\\busticket\\business\\abstract\\iseatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\business\\abstract\\iseatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA9809DC-7E0E-4AB8-B9E6-C8CCEDEF7DC9}|Business\\Business.csproj|solutionrelative:business\\abstract\\iseatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|c:\\users\\edanu\\source\\repos\\busticket\\entities\\concrete\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\entities\\concrete\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|solutionrelative:entities\\concrete\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -43,7 +43,7 @@
       "RelativeMoniker": "D:0:0:{8964BCE3-DFBF-475D-BB38-76F82BFEA447}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\concrete\\triprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8964BCE3-DFBF-475D-BB38-76F82BFEA447}|DataAccess\\DataAccess.csproj|c:\\users\\edanu\\source\\repos\\busticket\\dataaccess\\concrete\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8964BCE3-DFBF-475D-BB38-76F82BFEA447}|DataAccess\\DataAccess.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\dataaccess\\concrete\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8964BCE3-DFBF-475D-BB38-76F82BFEA447}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\concrete\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -51,7 +51,7 @@
       "RelativeMoniker": "D:0:0:{8964BCE3-DFBF-475D-BB38-76F82BFEA447}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\concrete\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|c:\\users\\edanu\\source\\repos\\busticket\\entities\\concrete\\bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|C:\\Users\\edanu\\source\\repos\\BusTicket\\entities\\concrete\\bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{264AE5A8-971D-4BA9-843D-71BD06827B38}|Entities\\Entities.csproj|solutionrelative:entities\\concrete\\bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -162,8 +162,7 @@
               "RelativeToolTip": "Business\\DTO\\DeleteTicketDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T17:31:23.619Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T17:31:23.619Z"
             },
             {
               "$type": "Document",
@@ -175,8 +174,7 @@
               "RelativeToolTip": "Business\\DTO\\UpdateTicketDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T17:30:38.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T17:30:38.157Z"
             },
             {
               "$type": "Document",
@@ -201,8 +199,7 @@
               "RelativeToolTip": "Business\\Concrete\\TicketManager.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAAADUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T13:45:23.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T13:45:23.582Z"
             },
             {
               "$type": "Document",
@@ -214,8 +211,7 @@
               "RelativeToolTip": "Business\\Abstract\\ITicketService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T13:45:04.814Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T13:45:04.814Z"
             },
             {
               "$type": "Document",
@@ -227,8 +223,7 @@
               "RelativeToolTip": "Business\\Concrete\\SeatManager.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwFgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T19:49:26.713Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T19:49:26.713Z"
             },
             {
               "$type": "Document",
@@ -240,8 +235,7 @@
               "RelativeToolTip": "Business\\DTO\\CreateTicketDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T17:18:33.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T17:18:33.69Z"
             },
             {
               "$type": "Document",
@@ -253,8 +247,7 @@
               "RelativeToolTip": "Business\\Abstract\\ISeatService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T17:19:37.989Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T17:19:37.989Z"
             },
             {
               "$type": "Document",
@@ -266,8 +259,7 @@
               "RelativeToolTip": "Entities\\Concrete\\Ticket.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T17:19:09.976Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T17:19:09.976Z"
             },
             {
               "$type": "Document",
@@ -279,8 +271,7 @@
               "RelativeToolTip": "DataAccess\\Concrete\\UserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T17:17:22.772Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T17:17:22.772Z"
             },
             {
               "$type": "Document",
@@ -316,8 +307,7 @@
               "RelativeToolTip": "DataAccess\\Concrete\\TripRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T19:21:11.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-18T19:21:11.224Z"
             },
             {
               "$type": "Document",
@@ -341,8 +331,7 @@
               "RelativeToolTip": "DataAccess\\Concrete\\TicketRepository.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T18:55:23.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-18T18:55:23.971Z"
             },
             {
               "$type": "Document",
@@ -402,8 +391,7 @@
               "RelativeToolTip": "Entities\\Concrete\\Bus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T13:00:20.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T13:00:20.65Z"
             },
             {
               "$type": "Document",
