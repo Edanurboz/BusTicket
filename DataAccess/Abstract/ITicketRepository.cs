@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Core;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace DataAccess.Abstract
     public interface ITicketRepository : IEntityRepository<Ticket>
     {
         List<Ticket> GetTicketsByTripId(int tripId);
-        Ticket GetTicketDetails(int ticketId);
+        List<TicketDTO> GetTicketDetails(int userId);
         void CancelTicket(int ticketId);
     }
 

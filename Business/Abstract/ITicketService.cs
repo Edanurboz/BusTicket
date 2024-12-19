@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Core;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace Business.Abstract
         Ticket GetTicketById(int id);
         List<Ticket> GetAllTickets();
         List<Ticket> GetTicketsByTripId(int tripId);
-        Ticket GetTicketDetails(int ticketId);
+        List<TicketDTO> GetTicketDetails(int userId);
         void CancelTicket(int ticketId);
     }
 }

@@ -86,6 +86,7 @@ namespace Business.Concrete
         public void Update(UpdateSeatDTO seat)
         {
             var newSeat= new Seat();
+            newSeat.seat_id= seat.seat_id;
             newSeat.seat_number = seat.seat_number;
             newSeat.is_reserved=seat.is_reserved;
             _seatRepository.Update(newSeat);

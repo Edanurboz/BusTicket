@@ -111,3 +111,5 @@ C:\Users\edanu\source\repos\BusTicket\Business\bin\Debug\Microsoft.Extensions.Co
 C:\Users\edanu\source\repos\BusTicket\Business\bin\Debug\Microsoft.Extensions.Configuration.dll
 C:\Users\edanu\source\repos\BusTicket\Business\bin\Debug\Microsoft.Extensions.Configuration.xml
 C:\Users\edanu\source\repos\BusTicket\Business\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\edanu\source\repos\BusTicket\Business\bin\Debug\Core.dll
+C:\Users\edanu\source\repos\BusTicket\Business\bin\Debug\Core.pdb

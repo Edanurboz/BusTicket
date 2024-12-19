@@ -269,6 +269,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WebAPII.Controllers.TicketsController",
+    "Method": "GetTicketDetails",
+    "RelativePath": "api/Tickets/GetTicketDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebAPII.Controllers.TripsController",
     "Method": "GetAllTrips",
     "RelativePath": "api/Trips",

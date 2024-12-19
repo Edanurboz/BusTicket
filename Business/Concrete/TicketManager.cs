@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Core;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
@@ -66,9 +67,9 @@ namespace Business.Concrete
             return _ticketRepository.Get(t => t.ticket_id == id);
         }
 
-        public Ticket GetTicketDetails(int ticketId)
+        public List<TicketDTO> GetTicketDetails(int userId)
         {
-            return _ticketRepository.GetTicketDetails(ticketId);
+            return _ticketRepository.GetTicketDetails(userId);
         }
 
         public List<Ticket> GetTicketsByTripId(int tripId)

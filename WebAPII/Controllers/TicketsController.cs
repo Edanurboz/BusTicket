@@ -33,6 +33,16 @@ namespace WebAPII.Controllers
             }
             return Ok(ticket);
         }
+        [HttpGet("GetTicketDetails")]
+        public IActionResult GetTicketDetails(int userId)
+        {
+            var result = _ticketService.GetTicketDetails(userId);
+            if (result == null)
+            {
+                return Ok("Bilet bulunamadı.");
+            }
+            return Ok(result);
+        }
 
         [HttpPost]
         public IActionResult CreateTicket([FromBody] Ticket ticket)

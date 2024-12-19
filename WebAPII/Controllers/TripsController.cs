@@ -38,13 +38,7 @@ namespace WebAPII.Controllers
         [HttpPost("CreateTrip")]
         public IActionResult CreateTrip([FromBody] CreateTripDTO request)
         {
-            request.date_ = request.date_.Date;
-            var response = new
-            {
-                departure_city = request.departure_city,
-                arrival_city = request.arrival_city,
-                date_ = request.date_.ToString("yyyy-MM-dd")
-            };
+          
             _tripService.Create(request);
             return Ok();
         }

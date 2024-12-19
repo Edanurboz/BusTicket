@@ -1,0 +1,10 @@
+C:\Users\edanu\source\repos\BusTicket\Core\bin\Debug\Core.dll
+C:\Users\edanu\source\repos\BusTicket\Core\bin\Debug\Core.pdb
+C:\Users\edanu\source\repos\BusTicket\Core\bin\Debug\Microsoft.Analytics.Interfaces.dll
+C:\Users\edanu\source\repos\BusTicket\Core\bin\Debug\Microsoft.Analytics.Interfaces.Streaming.dll
+C:\Users\edanu\source\repos\BusTicket\Core\bin\Debug\Microsoft.Analytics.Types.dll
+C:\Users\edanu\source\repos\BusTicket\Core\obj\Debug\Core.csproj.AssemblyReference.cache
+C:\Users\edanu\source\repos\BusTicket\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+C:\Users\edanu\source\repos\BusTicket\Core\obj\Debug\Core.csproj.Up2Date
+C:\Users\edanu\source\repos\BusTicket\Core\obj\Debug\Core.dll
+C:\Users\edanu\source\repos\BusTicket\Core\obj\Debug\Core.pdb

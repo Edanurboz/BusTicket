@@ -69,6 +69,7 @@ namespace Business.Concrete
         {
 
             var newTrip = new Trip();
+            newTrip.trip_id = trip.trip_id;
             newTrip.arrival_city = trip.arrival_city;
             newTrip.departure_city = trip.departure_city;
             newTrip.date_ = trip.date_;
