@@ -1,4 +1,5 @@
-﻿using Core;
+﻿using Business.DTO;
+using Core;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -10,13 +11,13 @@ namespace Business.Abstract
 {
     public interface ITicketService
     {
-        void CreateTicket(Ticket ticket);
-        void UpdateTicket(Ticket ticket);
-        void DeleteTicket(Ticket ticket);
+        string CreateTicket(CreateTicketDTO ticket);
+        void UpdateTicket(UpdateTicketDTO ticket);
+        void DeleteTicket(DeleteTicketDTO ticket);
         Ticket GetTicketById(int id);
         List<Ticket> GetAllTickets();
         List<Ticket> GetTicketsByTripId(int tripId);
-        List<TicketDTO> GetTicketDetails(int userId);
+        List<Core.TicketDTO> GetTicketDetails(int userId);
         void CancelTicket(int ticketId);
     }
 }

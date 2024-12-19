@@ -326,100 +326,10 @@
             "description": "OK"
           }
         }
-      },
-      "post": {
-        "tags": [
-          "Tickets"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Ticket"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Ticket"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Ticket"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
       }
     },
     "/api/Tickets/{id}": {
       "get": {
-        "tags": [
-          "Tickets"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Tickets"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Ticket"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Ticket"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Ticket"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "delete": {
         "tags": [
           "Tickets"
         ],
@@ -456,6 +366,99 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Tickets/CreateTicket": {
+      "post": {
+        "tags": [
+          "Tickets"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Tickets/UpdateTicket": {
+      "put": {
+        "tags": [
+          "Tickets"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Tickets/DeleteTicket": {
+      "delete": {
+        "tags": [
+          "Tickets"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteTicketDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteTicketDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteTicketDTO"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -810,53 +813,6 @@
   },
   "components": {
     "schemas": {
-      "Bus": {
-        "type": "object",
-        "properties": {
-          "bus_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "plate_number": {
-            "type": "string",
-            "nullable": true
-          },
-          "company": {
-            "type": "string",
-            "nullable": true
-          },
-          "trip_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "price": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "departure_time": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "trip": {
-            "$ref": "#/components/schemas/Trip"
-          },
-          "seats": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Seat"
-            },
-            "nullable": true
-          },
-          "tickets": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Ticket"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "CreateBusDTO": {
         "type": "object",
         "properties": {
@@ -892,6 +848,31 @@
           },
           "is_reserved": {
             "type": "boolean"
+          },
+          "bus_id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateTicketDTO": {
+        "type": "object",
+        "properties": {
+          "trip_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "user_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "is_cancelled": {
+            "type": "boolean"
+          },
+          "seat_id": {
+            "type": "integer",
+            "format": "int32"
           },
           "bus_id": {
             "type": "integer",
@@ -972,6 +953,16 @@
         },
         "additionalProperties": false
       },
+      "DeleteTicketDTO": {
+        "type": "object",
+        "properties": {
+          "ticket_id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "DeleteTripDTO": {
         "type": "object",
         "properties": {
@@ -988,114 +979,6 @@
           "user_id": {
             "type": "integer",
             "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Seat": {
-        "type": "object",
-        "properties": {
-          "seat_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "seat_number": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "is_reserved": {
-            "type": "boolean"
-          },
-          "bus_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "bus": {
-            "$ref": "#/components/schemas/Bus"
-          },
-          "tickets": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Ticket"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "Ticket": {
-        "type": "object",
-        "properties": {
-          "ticket_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "trip_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "user_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "is_cancelled": {
-            "type": "boolean"
-          },
-          "seat_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "bus_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "trip": {
-            "$ref": "#/components/schemas/Trip"
-          },
-          "user": {
-            "$ref": "#/components/schemas/User"
-          },
-          "seat": {
-            "$ref": "#/components/schemas/Seat"
-          },
-          "bus": {
-            "$ref": "#/components/schemas/Bus"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Trip": {
-        "type": "object",
-        "properties": {
-          "trip_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "departure_city": {
-            "type": "string",
-            "nullable": true
-          },
-          "arrival_city": {
-            "type": "string",
-            "nullable": true
-          },
-          "date_": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "tickets": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Ticket"
-            },
-            "nullable": true
-          },
-          "buses": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Bus"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1143,6 +1026,35 @@
           },
           "is_reserved": {
             "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateTicketDTO": {
+        "type": "object",
+        "properties": {
+          "ticket_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "trip_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "user_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "is_cancelled": {
+            "type": "boolean"
+          },
+          "seat_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bus_id": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -1203,51 +1115,6 @@
           "user_id": {
             "type": "integer",
             "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "User": {
-        "type": "object",
-        "properties": {
-          "user_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "surname": {
-            "type": "string",
-            "nullable": true
-          },
-          "email": {
-            "type": "string",
-            "nullable": true
-          },
-          "password": {
-            "type": "string",
-            "nullable": true
-          },
-          "phone_number": {
-            "type": "string",
-            "nullable": true
-          },
-          "gender": {
-            "type": "string",
-            "nullable": true
-          },
-          "identity_": {
-            "type": "string",
-            "nullable": true
-          },
-          "tickets": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Ticket"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false

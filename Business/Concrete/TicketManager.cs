@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.DTO;
 using Core;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -33,28 +34,24 @@ namespace Business.Concrete
             }
         }
 
-        public void CreateTicket(Ticket ticket)
+        public string CreateTicket(CreateTicketDTO ticket)
         {
-            if (ticket != null)
-            {
-                _ticketRepository.Create(ticket);
-            }
-            else
-            {
-                throw new ArgumentNullException(nameof(ticket), "Ticket cannot be null");
-            }
+            var newTicket = new Ticket();
+            
+            newTicket.trip_id = ticket.trip_id;
+            newTicket.user_id = ticket.user_id;
+            newTicket.is_cancelled = false;
+            newTicket.seat_id = ticket.seat_id;
+            newTicket.bus_id = ticket.bus_id;
+            _ticketRepository.Create(newTicket);
+            return "Koltuk başarıyla eklendi.";
         }
 
-        public void DeleteTicket(Ticket ticket)
+        public void DeleteTicket(DeleteTicketDTO ticket)
         {
-            if (ticket != null)
-            {
-                _ticketRepository.Delete(ticket);
-            }
-            else
-            {
-                throw new ArgumentNullException(nameof(ticket), "Ticket cannot be null");
-            }
+            var newTicket = new Ticket();
+            newTicket.ticket_id = ticket.ticket_id;
+            _ticketRepository.Delete(newTicket);
         }
 
         public List<Ticket> GetAllTickets()
@@ -67,7 +64,7 @@ namespace Business.Concrete
             return _ticketRepository.Get(t => t.ticket_id == id);
         }
 
-        public List<TicketDTO> GetTicketDetails(int userId)
+        public List<Core.TicketDTO> GetTicketDetails(int userId)
         {
             return _ticketRepository.GetTicketDetails(userId);
         }
@@ -77,16 +74,16 @@ namespace Business.Concrete
             return _ticketRepository.GetTicketsByTripId(tripId);
         }
 
-        public void UpdateTicket(Ticket ticket)
+        public void UpdateTicket(UpdateTicketDTO ticket)
         {
-            if (ticket != null)
-            {
-                _ticketRepository.Update(ticket);
-            }
-            else
-            {
-                throw new ArgumentNullException(nameof(ticket), "Ticket cannot be null");
-            }
+            var newTicket = new Ticket();
+            newTicket.ticket_id = ticket.ticket_id;
+            newTicket.trip_id = ticket.trip_id;
+            newTicket.user_id = ticket.user_id;
+            newTicket.is_cancelled = false;
+            newTicket.seat_id = ticket.seat_id;
+            newTicket.bus_id = ticket.bus_id;
+            _ticketRepository.Update(newTicket);
         }
     }
 }

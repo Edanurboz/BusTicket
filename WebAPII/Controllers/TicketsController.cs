@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.DTO;
 using Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -44,36 +45,27 @@ namespace WebAPII.Controllers
             return Ok(result);
         }
 
-        [HttpPost]
-        public IActionResult CreateTicket([FromBody] Ticket ticket)
+        [HttpPost("CreateTicket")]
+        public IActionResult CreateTicket([FromBody] CreateTicketDTO request)
         {
-            _ticketService.CreateTicket(ticket);
-            return CreatedAtAction(nameof(GetTicketById), new { id = ticket.ticket_id }, ticket);
+            _ticketService.CreateTicket(request);
+            return Ok();
         }
 
-        [HttpPut("{id}")]
-        public IActionResult UpdateTicket(int id, [FromBody] Ticket ticket)
+        [HttpPut("UpdateTicket")]
+        public IActionResult UpdateTicket( [FromBody] UpdateTicketDTO request)
         {
-            if (id != ticket.ticket_id)
-            {
-                return BadRequest();
-            }
 
-            _ticketService.UpdateTicket(ticket);
-            return NoContent();
+            _ticketService.UpdateTicket(request);
+            return Ok();
         }
 
-        [HttpDelete("{id}")]
-        public IActionResult DeleteTicket(int id)
+        [HttpDelete("DeleteTicket")]
+        public IActionResult DeleteTicket([FromBody] DeleteTicketDTO request)
         {
-            var ticket = _ticketService.GetTicketById(id);
-            if (ticket == null)
-            {
-                return NotFound();
-            }
-
-            _ticketService.DeleteTicket(ticket);
-            return NoContent();
+            
+            _ticketService.DeleteTicket(request);
+            return Ok();
         }
     }
 }
