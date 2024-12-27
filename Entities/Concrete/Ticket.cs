@@ -17,7 +17,8 @@ namespace Entities.Concrete
         public bool is_cancelled { get; set; }
         public int seat_id { get; set; }
         public int bus_id { get; set; }
-       
+        public string Status { get; set; }
+
 
         public Trip Trip { get; set; }
         public User User { get; set; }

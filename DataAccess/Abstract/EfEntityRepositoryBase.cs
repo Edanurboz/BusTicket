@@ -35,7 +35,6 @@ namespace DataAccess.Abstract
                 }
                 catch (Exception ex)
                 {
-                    // Hata detaylarını loglayın veya fırlatın
                     throw new Exception("Silme işlemi sırasında bir hata oluştu.", ex);
                 }
             }

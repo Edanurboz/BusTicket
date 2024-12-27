@@ -46,7 +46,8 @@ namespace WebAPII.Controllers
         [HttpPut("UpdateTrip")]
         public IActionResult UpdateTrip([FromBody] UpdateTripDTO request)
         {
-            _tripService.UpdateTrip(request);
+            _tripService.UpdateTrip
+                (request);
             return Ok();
         }
 

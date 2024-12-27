@@ -13,9 +13,6 @@
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\edanu\\source\\repos\\BusTicket\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Core\\Core.csproj"
-              },
               "C:\\Users\\edanu\\source\\repos\\BusTicket\\DataAccess\\DataAccess.csproj": {
                 "projectPath": "C:\\Users\\edanu\\source\\repos\\BusTicket\\DataAccess\\DataAccess.csproj"
               },
@@ -23,22 +20,6 @@
                 "projectPath": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Entities.csproj"
               }
             }
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
-    "C:\\Users\\edanu\\source\\repos\\BusTicket\\Core\\Core.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Core\\Core.csproj",
-        "projectName": "Core",
-        "projectPath": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Core\\Core.csproj",
-        "UsingMicrosoftNETSdk": false,
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
           }
         }
       },
@@ -55,9 +36,6 @@
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\edanu\\source\\repos\\BusTicket\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Core\\Core.csproj"
-              },
               "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Entities.csproj": {
                 "projectPath": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Entities.csproj"
               }
@@ -115,9 +93,6 @@
             "projectReferences": {
               "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Business.csproj": {
                 "projectPath": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Business.csproj"
-              },
-              "C:\\Users\\edanu\\source\\repos\\BusTicket\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Core\\Core.csproj"
               },
               "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Entities.csproj": {
                 "projectPath": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Entities.csproj"

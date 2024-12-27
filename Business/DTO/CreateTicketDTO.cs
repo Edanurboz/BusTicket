@@ -13,5 +13,6 @@ namespace Business.DTO
         public bool is_cancelled { get; set; }
         public int seat_id { get; set; }
         public int bus_id { get; set; }
+        
     }
 }

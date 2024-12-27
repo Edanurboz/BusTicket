@@ -30,10 +30,10 @@ namespace WebAPII.Controllers
         }
 
         [HttpDelete("DeleteBus")]
-        public IActionResult DeleteBus([FromBody] DeleteBusDTO request) {
-
+        public IActionResult DeleteBus([FromBody] DeleteBusDTO request) 
+        {
             _busService.Delete(request);
-            return Ok();
+            return Ok("Silindi.");
         }
         [HttpPut("UpdateBus")]
         public IActionResult UpdateBus([FromBody] UpdateBusDTO request)

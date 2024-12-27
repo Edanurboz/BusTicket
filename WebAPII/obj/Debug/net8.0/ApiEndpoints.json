@@ -249,22 +249,6 @@
   },
   {
     "ContainingType": "WebAPII.Controllers.TicketsController",
-    "Method": "GetTicketDetails",
-    "RelativePath": "api/Tickets/GetTicketDetails",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebAPII.Controllers.TicketsController",
     "Method": "UpdateTicket",
     "RelativePath": "api/Tickets/UpdateTicket",
     "HttpMethod": "PUT",

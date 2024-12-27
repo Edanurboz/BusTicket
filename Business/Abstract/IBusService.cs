@@ -13,7 +13,7 @@ namespace Business.Abstract
     {
         string Create(CreateBusDTO bus);
         void Update(UpdateBusDTO bus);
-        void Delete(DeleteBusDTO busId);
+        void Delete(DeleteBusDTO bus);
         List<Bus> GetAll();
         object GetBusById(int id);
     }

@@ -9,7 +9,6 @@
       "WebAPII/1.0.0": {
         "dependencies": {
           "Business": "1.0.0",
-          "Core": "1.0.0",
           "Entities": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.0",
           "Microsoft.Data.SqlClient": "4.0.6",
@@ -500,7 +499,6 @@
       },
       "Business/1.0.0": {
         "dependencies": {
-          "Core": "1.0.0",
           "DataAccess": "1.0.0",
           "Entities": "1.0.0"
         },
@@ -511,17 +509,8 @@
           }
         }
       },
-      "Core/1.0.0": {
-        "runtime": {
-          "Core.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "DataAccess/1.0.0": {
         "dependencies": {
-          "Core": "1.0.0",
           "Entities": "1.0.0"
         },
         "runtime": {
@@ -945,11 +934,6 @@
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
     "Business/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

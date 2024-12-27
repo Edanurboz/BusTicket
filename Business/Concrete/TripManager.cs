@@ -36,6 +36,7 @@ namespace Business.Concrete
 
             var newTrip = new Trip();
             newTrip.trip_id = trip.trip_id;
+            _tripRepository.Delete(newTrip);
         }
 
         public List<Trip> GetAllTrips()

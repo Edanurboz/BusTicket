@@ -35,6 +35,7 @@ namespace Business.Concrete
         {
             var newBus=new Bus();
             newBus.bus_id=bus.bus_id;
+            _busRepository.Delete(newBus);
         }
 
         public List<Bus> GetAll()

@@ -34,20 +34,15 @@ namespace WebAPII.Controllers
             }
             return Ok(ticket);
         }
-        [HttpGet("GetTicketDetails")]
-        public IActionResult GetTicketDetails(int userId)
-        {
-            var result = _ticketService.GetTicketDetails(userId);
-            if (result == null)
-            {
-                return Ok("Bilet bulunamadı.");
-            }
-            return Ok(result);
-        }
 
         [HttpPost("CreateTicket")]
         public IActionResult CreateTicket([FromBody] CreateTicketDTO request)
         {
+            //if (string.IsNullOrWhiteSpace(request.Status))
+            //{
+            //    request.Status = "Aktif"; // Varsayılan değeri kontrol edin ve atayın
+            //}
+
             _ticketService.CreateTicket(request);
             return Ok();
         }

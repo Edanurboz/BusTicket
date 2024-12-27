@@ -1,5 +1,4 @@
 ﻿using Business.DTO;
-using Core;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -17,7 +16,6 @@ namespace Business.Abstract
         Ticket GetTicketById(int id);
         List<Ticket> GetAllTickets();
         List<Ticket> GetTicketsByTripId(int tripId);
-        List<Core.TicketDTO> GetTicketDetails(int userId);
         void CancelTicket(int ticketId);
     }
 }

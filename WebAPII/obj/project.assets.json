@@ -843,7 +843,6 @@
       "Business/1.0.0": {
         "type": "project",
         "dependencies": {
-          "Core": "1.0.0",
           "DataAccess": "1.0.0",
           "Entities": "1.0.0"
         },
@@ -854,19 +853,9 @@
           "bin/placeholder/Business.dll": {}
         }
       },
-      "Core/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Core.dll": {}
-        }
-      },
       "DataAccess/1.0.0": {
         "type": "project",
         "dependencies": {
-          "Core": "1.0.0",
           "Entities": "1.0.0"
         },
         "compile": {
@@ -2948,11 +2937,6 @@
       "path": "../Business/Business.csproj",
       "msbuildProject": "../Business/Business.csproj"
     },
-    "Core/1.0.0": {
-      "type": "project",
-      "path": "../Core/Core.csproj",
-      "msbuildProject": "../Core/Core.csproj"
-    },
     "DataAccess/1.0.0": {
       "type": "project",
       "path": "../DataAccess/DataAccess.csproj",
@@ -2967,7 +2951,6 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Business >= 1.0.0",
-      "Core >= 1.0.0",
       "Entities >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.0",
       "Microsoft.Data.SqlClient >= 4.0.6",
@@ -3010,9 +2993,6 @@
           "projectReferences": {
             "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Business.csproj": {
               "projectPath": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Business\\Business.csproj"
-            },
-            "C:\\Users\\edanu\\source\\repos\\BusTicket\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Core\\Core.csproj"
             },
             "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Entities.csproj": {
               "projectPath": "C:\\Users\\edanu\\source\\repos\\BusTicket\\Entities\\Entities.csproj"

@@ -78,6 +78,9 @@ namespace DataAccess.Concrete
                 entity.Property(t => t.bus_id)
                       .IsRequired();
 
+                entity.Property(t => t.Status);
+                      
+
                 entity.HasOne(t => t.Trip)
                       .WithMany(tr => tr.Tickets)
                       .HasForeignKey(t => t.trip_id)

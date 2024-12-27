@@ -35,6 +35,7 @@ namespace Business.Concrete
         {
             var newSeat = new Seat();
             newSeat.seat_id=seat.seat_id;
+            _seatRepository.Delete(newSeat);
         }
 
 

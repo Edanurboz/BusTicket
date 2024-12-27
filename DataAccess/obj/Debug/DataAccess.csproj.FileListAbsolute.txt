@@ -121,5 +121,3 @@ C:\Users\edanu\source\repos\BusTicket\DataAccess\obj\Debug\DataAccess.csproj.Up2
 C:\Users\edanu\source\repos\BusTicket\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\edanu\source\repos\BusTicket\DataAccess\obj\Debug\DataAccess.pdb
 C:\Users\edanu\source\repos\BusTicket\DataAccess\bin\Debug\Microsoft.Data.SqlClient.pdb
-C:\Users\edanu\source\repos\BusTicket\DataAccess\bin\Debug\Core.dll
-C:\Users\edanu\source\repos\BusTicket\DataAccess\bin\Debug\Core.pdb
