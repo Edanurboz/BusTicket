@@ -217,6 +217,22 @@
   },
   {
     "ContainingType": "WebAPII.Controllers.TicketsController",
+    "Method": "CancelTicket",
+    "RelativePath": "api/Tickets/CancelTicket",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ticketId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPII.Controllers.TicketsController",
     "Method": "CreateTicket",
     "RelativePath": "api/Tickets/CreateTicket",
     "HttpMethod": "POST",

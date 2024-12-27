@@ -62,5 +62,12 @@ namespace WebAPII.Controllers
             _ticketService.DeleteTicket(request);
             return Ok();
         }
+
+        [HttpPost("CancelTicket")]
+        public IActionResult CancelTicket(int ticketId)
+        {
+            _ticketService.CancelTicket(ticketId);
+            return Ok();
+        }
     }
 }
