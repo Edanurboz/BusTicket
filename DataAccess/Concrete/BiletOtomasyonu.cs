@@ -19,7 +19,7 @@ namespace DataAccess.Concrete
         {
             base.OnModelCreating(modelBuilder);
 
-            // User Entity
+            
             modelBuilder.Entity<User>(entity =>
             {
                 entity.HasKey(u => u.user_id);
@@ -58,7 +58,7 @@ namespace DataAccess.Concrete
                       .OnDelete(DeleteBehavior.Cascade);
             });
 
-            // Ticket Entity
+            
             modelBuilder.Entity<Ticket>(entity =>
             {
                 entity.HasKey(t => t.ticket_id);
@@ -103,7 +103,7 @@ namespace DataAccess.Concrete
 
             });
 
-            // Trip Entity
+            
             modelBuilder.Entity<Trip>(entity =>
             {
                 entity.HasKey(tr => tr.trip_id);
@@ -127,11 +127,11 @@ namespace DataAccess.Concrete
                 entity.HasMany(tr => tr.Buses)
                       .WithOne(t => t.Trip)
                       .HasForeignKey(t=>t.trip_id)
-                      .OnDelete(DeleteBehavior.SetNull);
+                      .OnDelete(DeleteBehavior.Cascade);
 
             });
 
-            // Seat Entity
+            
             modelBuilder.Entity<Seat>(entity =>
             {
                 entity.HasKey(s => s.seat_id);
@@ -145,19 +145,19 @@ namespace DataAccess.Concrete
                 entity.Property(s => s.bus_id)
                       .IsRequired();
 
-                entity.HasOne(s => s.Bus)  // Seat bir Bus'a bağlı
-                       .WithMany(b => b.Seats) // Bus, birden çok Seat'a sahip olabilir
-                       .HasForeignKey(s => s.bus_id) // Seat tablosunda bus_id yabancı anahtar olarak kullanılır
+                entity.HasOne(s => s.Bus) 
+                       .WithMany(b => b.Seats) 
+                       .HasForeignKey(s => s.bus_id) 
                        .OnDelete(DeleteBehavior.Cascade);
 
-                entity.HasMany(s => s.Tickets) // Seat'ın birden fazla Ticket'ı olabilir
-                      .WithOne(t => t.Seat) // Her Ticket bir Seat'a ait
-                      .HasForeignKey(t => t.seat_id) // Ticket tablosunda seat_id yabancı anahtar
-                      .OnDelete(DeleteBehavior.Restrict); // Seat silinirse, Ticket'lar etkilenmez
+                entity.HasMany(s => s.Tickets) 
+                      .WithOne(t => t.Seat) 
+                      .HasForeignKey(t => t.seat_id) 
+                      .OnDelete(DeleteBehavior.Restrict); 
  
             });
 
-            // Bus Entity
+            
             modelBuilder.Entity<Bus>(entity =>
             {
                 entity.HasKey(b => b.bus_id);
@@ -180,23 +180,23 @@ namespace DataAccess.Concrete
                      .IsRequired();
 
 
-                // Bus -> Trip: Her Bus bir Trip'e ait
-                entity.HasOne(b => b.Trip)  // Bus bir Trip'e bağlı
-                      .WithMany(t => t.Buses)  // Trip, birden fazla Bus'a sahip olabilir
-                      .HasForeignKey(b => b.trip_id) // Bus tablosunda trip_id yabancı anahtar olarak kullanılır
-                      .OnDelete(DeleteBehavior.Cascade); // Trip silinirse, ilgili Bus'lar da silinir
+                
+                entity.HasOne(b => b.Trip)  
+                      .WithMany(t => t.Buses)  
+                      .HasForeignKey(b => b.trip_id) 
+                      .OnDelete(DeleteBehavior.Cascade); 
 
-                // Bus -> Seat: Bir Bus birden çok Seat'a sahip olabilir
-                entity.HasMany(b => b.Seats) // Bus birden fazla Seat'a sahip
-                      .WithOne(s => s.Bus) // Her Seat bir Bus'a ait
-                      .HasForeignKey(s => s.bus_id) // Seat tablosunda bus_id yabancı anahtar
-                      .OnDelete(DeleteBehavior.Cascade); // Bus silinirse, ilgili Seat'lar da silinir
+                
+                entity.HasMany(b => b.Seats) 
+                      .WithOne(s => s.Bus) 
+                      .HasForeignKey(s => s.bus_id) 
+                      .OnDelete(DeleteBehavior.Cascade); 
 
-                // Bus -> Ticket: Bir Bus birden çok Ticket'a sahip olabilir
-                entity.HasMany(b => b.Tickets) // Bus birden fazla Ticket'a sahip
-                      .WithOne(t => t.Bus) // Her Ticket bir Bus'a ait
-                      .HasForeignKey(t => t.bus_id) // Ticket tablosunda bus_id yabancı anahtar
-                      .OnDelete(DeleteBehavior.Cascade); // Bus silinirse, ilgili Ticket'lar da silinir
+                
+                entity.HasMany(b => b.Tickets) 
+                      .WithOne(t => t.Bus) 
+                      .HasForeignKey(t => t.bus_id) 
+                      .OnDelete(DeleteBehavior.Cascade); 
         });
         
         }

@@ -27,8 +27,6 @@ namespace Business.Concrete
 
         public string CreateUser(CreateUserDTO user)
         {
-            // Kullanıcı oluşturma işlemleri
-            // Örneğin, validasyon yapabilirsiniz
            var newUser=new User();
             newUser.name = user.name;
             newUser.email = user.email;
@@ -65,7 +63,7 @@ namespace Business.Concrete
             return user;
         }
 
-        public object GetUserById(int id)
+        public User GetUserById(int id)
         {
             var user = _userRepository.Get(u => u.user_id == id);
             if (user == null)

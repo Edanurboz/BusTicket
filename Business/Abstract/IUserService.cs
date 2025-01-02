@@ -15,7 +15,7 @@ namespace Business.Abstract
         void DeleteUser(DeleteUserDTO user);
         User GetUserByEmail(string email);
         List<User> GetAllUsers();
-        object GetUserById(int id);
+        User GetUserById(int id);
         User Login(string email, string password);
     }
 }

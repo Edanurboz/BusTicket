@@ -10,7 +10,6 @@ namespace Business.Abstract
 {
     public interface ISeatService
     {
-        //burada istediğini yaz fiyat aralığı vs
         string Create(CreateSeatDTO seat); 
         void Update(UpdateSeatDTO seat);
         void Delete(DeleteSeatDTO seat);

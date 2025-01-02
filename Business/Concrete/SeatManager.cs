@@ -41,7 +41,6 @@ namespace Business.Concrete
 
         public List<Seat> GetAll()
         {
-            //iş kodları
             return _seatRepository.GetAll();
         }
 
@@ -66,7 +65,7 @@ namespace Business.Concrete
             }
             else
             {
-                throw new ArgumentException("Seat not found");
+                throw new ArgumentException("Koltuk Bulunamadı");
             }
         }
 
@@ -80,7 +79,7 @@ namespace Business.Concrete
             }
             else
             {
-                throw new ArgumentException("Seat not found");
+                throw new ArgumentException("Koltuk Bulunamadı");
             }
         }
 

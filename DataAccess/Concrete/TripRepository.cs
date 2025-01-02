@@ -22,7 +22,7 @@ namespace DataAccess.Concrete
         public Trip GetTripDetails(int tripId)
         {
             return _context.Trips
-                           .Include(t => t.Buses) // Seferle ilişkili bus bilgilerini dahil et
+                           .Include(t => t.Buses) 
                            .FirstOrDefault(t => t.trip_id == tripId);
         }
 
